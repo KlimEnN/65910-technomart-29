@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Андрей  Клименко](https://up.htmlacademy.ru/htmlcss/29/user/65910).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Петрищак] (https://htmlacademy.ru/profile/maksim_petrishchak)
 
 ---
 
