@@ -3,10 +3,191 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <!-- Шапка сайта -->
+    <header class="main_header">
+      <a href="" class="logo">
+        <img src="img/logo.png" alt="Логотип компании Техномарт" width="220" height="47">
+      </a>
+
+      <ul class="sub_menu_list">
+        <li class="sub_menu_list_item">
+          <a href="">Поиск:</a>
+        </li>
+        <li class="sub_menu_list_item">
+          <a href="">Закладки: <span class="bookmarks_numb">0</span> </a>
+        </li>
+        <li class="sub_menu_list_item">
+          <a href="">Корзина: <span class="card_numb">0</span></a>
+        </li>
+        <li class="sub_menu_list_item">
+          <a href="">Оформить заказ</a>
+        </li>
+      </ul>
+      
+      <p>
+        Интернет-магазин <br>
+        строительных материалов <br>
+        и инструментов для ремонта
+      </p>
+
+      <div class="telephon">
+        <span class="tel">+7 (812) 555-05-55</span>
+      </div>
+      <p>
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </p>
+
+      <ul class="account_list">
+        <li class="account_list_item">
+          <a href="">Войти</a>
+        </li>
+        <li class="account_list_item">
+          <a href="">Регистрация</a>
+        </li>
+      </ul>
+
+      <nav class="catalog_nav_list">
+          <ul class="catalog_nav_list_item">
+            <a href="">Главная</a>
+          </ul>
+          <ul class="catalog_nav_list_item">
+            <a href="">Компания</a>
+          </ul>
+          <ul class="catalog_nav_list_item">
+            <a href="">Каталог</a>
+          </ul>
+          <ul class="catalog_nav_list_item">
+            <a href="">Новости</a>
+          </ul>
+          <ul class="catalog_nav_list_item">
+            <a href="">Спецпредложения</a>
+          </ul>
+          <ul class="catalog_nav_list_item">
+            <a href="">Доставка</a>
+          </ul>
+          <ul class="catalog_nav_list_item">
+            <a href="">Контакты</a>
+          </ul>
+      </nav>
+    </header>
+
+    <!-- Основное содержимое старницы  -->
+    <main>
+      <!-- H1 нужно спрятать при помощи стилей -->
+      <h1 class="visibility_hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      
+      <!-- Блок с баннерами -->
+      <section class="promo">
+        <h2 class="visibility_hidden">Промо-баннеры</h2>
+        <ul class="promo_list">
+          <li class="promo_list_item">
+            <p>Материалы</p>
+            <a href="">На любой вкус</a>
+          </li>
+          <li class="promo_list_item">
+            <p>Инструмент</p>
+            <a href="">На все случаи</a>
+          </li>
+          <li class="promo_list_item">
+            <p>Техника</p>
+            <a href="">Для стройки</a>
+          </li>
+          <li class="promo_list_item">
+            <p>Скидки 50%</p>
+            <a href="">На 350 ТОВАРОВ</a>
+          </li>
+          <li class="promo_list_item">
+            <p>Доставка</p>
+            <a href="">Бесплатно</a>
+          </li>
+        </ul>
+
+        <!-- Слайдер -->
+        <div class="slider">
+          <img src="" alt="">
+          <button type="button" disabled>Назад</button>
+          <button type="button">Вперед</button>
+        </div>
+        
+      </section>
+
+      <section class="top_product">
+        <h2>Популярные товары</h2>
+      </section>
+
+      <section class="top_manufacturers">
+        <h2>Популярные Производители</h2>
+
+      </section>
+
+      <section class="servises">
+        <h2>Сервисы</h2>
+        <p>
+          Хороший интернет-магазин отличается от плохого не только ценами! <br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+
+      </section>
+
+      <section class="about_company">
+        <h2>Компания «Техномарт»</h2>
+        <p>
+          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
+          ремонта и строительства не оставит равнодушными любителей сэкономить на <br>
+          гастарбайтерах.
+        </p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки России! <br>
+          Техномарт работает со многими транспортными компаниями:
+        </p>
+        <ul class="about_company_list">
+          <li class="about_company_list_item">Деловые линии</li>
+          <li class="about_company_list_item">Автотрейдинг</li>
+          <li class="about_company_list_item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="about_company_link">Подробнее о компании</a>
+      </section>
+
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>
+          Вы можете забрать товар сами, <br>
+          заехав в наш офис:
+        </p>
+        <img src="№" alt="Карта проезда" width="" height="">
+        <button type="button" class="map_pop_up">Заблудились? Напишите нам!</button>
+
+      </section>
+
+
+    </main>
+
+    
+<!-- Подвал сайта -->
+    <footer>
+      <a href="" class="logo">
+        <img src="" alt="Логотип компании Техномарт" width="220" height="68">
+      </a>
+
+
+    </footer>
+
+    <!-- Пап-ап окна на главной -->
+    <section class="form">
+      <h3>Форма обратной связи</h3>
+      <!-- Тут инпуты формы -->
+    </section>
+
+    <section class="map">
+      <h3>Карта</h3>
+      <!--Тут будет карта  -->
+    </section>
+
 
   </body>
 </html>
