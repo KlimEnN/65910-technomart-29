@@ -4,11 +4,14 @@
     --basic-red:red;
     --basic-green: #63A63E;
     --basic-grey: #32425C;
-    --basic-greylight: #C5C5C5;
+    --basic-greylight: #F2F6F8;
     --basic-background: #F4F7F9;
     --basic-white: #ffffff;
     --basic-black: #000000;
     --basic-gold: #F9F5F0;
+    --basic-sel: #F7F3EC;
+    --basic-oldprice: #A9A9A9;
+    
   
     --special-ylellow: #FFBF47;
     --special-blue: #3BBCE3;
@@ -166,12 +169,14 @@ img {
 }
 
 .old-price {
-    color: var(--basic-greylight);
+    color: var(--basic-oldprice:);
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
     }
 
 .new-price {
@@ -190,8 +195,83 @@ img {
     background-color: #F1F5F7;
 }
 
-.label {
+/* Catalog */
+.breadcrumb-link{
+    color: var(--basic-grey);
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
 
+.header-main{
+    background-color: var(--basic-greylight);
+}
+
+.sorting{
+    background-color: var(--basic-sel);
+}
+
+.filter-color {
+    background-color: var(--basic-sel);
+}
+
+.filter-heading {
+    color: var(--basic-black);
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.list-heading {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.filter-item-style {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.button-filter {
+    padding: 0;
+    border: 1px solid var(--basic-greylight);
+    background-color: transparent;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.top-products-item{
+    border: 2px solid var(--basic-greylight);
+}
+
+.seo_text {
+    background-color: var(--basic-greylight);
+}
+
+.seo_text p{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
 }
 
 /* footer */
