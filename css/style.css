@@ -77,6 +77,16 @@ img {
 
   /* header */
 
+.main-header-logo {
+    display: flex;
+    width: 220px ;
+    height: 47px;
+    background: #EE3643;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    justify-content: center;
+}
+
+
 .main-header {
     background-color: var(--basic-background);
 }
