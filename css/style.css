@@ -39,6 +39,9 @@ body {
     background-color: var(--basic-white);
     background-position: top center;
     background-repeat: no-repeat;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
   }
 
 a {
@@ -75,6 +78,17 @@ img {
     background-color: var(--basic-gold) ;
 }
 
+.page {
+    height: 100%; 
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+  }
+
   /* header */
 
 .main-header-logo {
@@ -99,7 +113,7 @@ img {
     background-color: var(--basic-grey); 
 }
 
-.cub-menu-link {
+.sub-menu-link {
     color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
@@ -125,12 +139,29 @@ img {
 
 .main-nav {
     background-color: var(--basic-grey);
+    
+}
+
+.main-nav-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
 }
 
 .main-nav-list a {
     color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
+    
+}
+
+.sub-menu-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.midl-header {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 /* promo */
@@ -167,6 +198,17 @@ img {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
+}
+
+.promo-list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
+}
+
+.promo-item-material {
+    width: 300px;
+    height: 123px;
 }
 
 /* top products */
@@ -312,4 +354,37 @@ img {
 
 .contact-link {
     color: var(--special-ylellow); 
+}
+
+.top-manufacturers {
+    display: grid;
+    
+}
+
+.block-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+   
+}
+
+.top-manufacturers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+}
+
+.top-products-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px ;
+}
+
+.top-products-item {
+    width: 220px;
+    height: 318px;
+}
+
+.about-company {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;  
 }

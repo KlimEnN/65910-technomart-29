@@ -12,45 +12,54 @@
 
     <!-- /Шапка сайта -->
     <header class="main-header">
-      <a class="main-header-logo"  >
-        <img class="logo" src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="108" height="18">
-      </a>
-
-      <ul class="sub-menu-list">
-        <li class="sub-menu-item">
-          <input class="cub-menu-link" type="search"  placeholder="Поиск">
-        </li>
-        <li class="sub-menu-item">
-          <a class="cub-menu-link" href="blank.html">Закладки: <span class="bookmarks_numb">0</span> </a>
-        </li>
-        <li class="sub-menu-item">
-          <a class="cub-menu-link" href="blank.html">Корзина: <span class="card_numb">0</span></a>
-        </li>
-        <li class="sub-menu-item">
-          <a class="cub-menu-link" href="blank.html">Оформить заказ</a>
-        </li>
-      </ul>
+      <div class="top-header"></div>
       
-      <p class="tagline">
-        Интернет-магазин <br>
-        строительных материалов <br>
-        и инструментов для ремонта
-      </p>
+        <ul class="sub-menu-list">
+          <li>
+            <a class="main-header-logo"  >
+              <img class="logo" src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="108" height="18">
+            </a>
+          </li>
+          <li class="sub-menu-item">
+            <input class="cub-menu-link" type="search"  placeholder="Поиск">
+          </li>
+          <li class="sub-menu-item">
+            <a class="cub-menu-link" href="blank.html">Закладки: <span class="bookmarks_numb">0</span> </a>
+          </li>
+          <li class="sub-menu-item">
+            <a class="cub-menu-link" href="blank.html">Корзина: <span class="card_numb">0</span></a>
+          </li>
+          <li class="sub-menu-item">
+            <a class="cub-menu-link" href="blank.html">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
+        
+      
+      <div class="midl-header">
+        <p class="tagline">
+          Интернет-магазин <br>
+          строительных материалов <br>
+          и инструментов для ремонта
+        </p>
 
-      <a class="contacts-phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <div class="header-contact">
+          <a class="contacts-phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
 
-      <p class="address">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
+          <p class="address">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+        </div> 
 
-      <ul class="account-list">
-        <li class="account-item">
-          <a class="account-link" href="blank.html">Войти</a>
-        </li>
-        <li class="account-item">
-          <a class="account-link" href="blank.html">Регистрация</a>
-        </li>
-      </ul>
+        <ul class="account-list">
+          <li class="account-item">
+            <a class="account-link" href="blank.html">Войти</a>
+          </li>
+          <li class="account-item">
+            <a class="account-link" href="blank.html">Регистрация</a>
+          </li>
+        </ul>
+      </div>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -100,17 +109,17 @@
             <a class="promo-link" href="">Бесплатно</a>
             <img src="img/icon-5.svg" alt="" width="78" height="63">
           </li>
+          <li>
+            <h2>Перфораторы</h2>
+            <p>Настоящие мужские игрушки</p>
+            <img src="img/foto-slider.jpg" alt="" width="620" height="266">
+            <button class="button" type="button">ОТКРЫТЬ КАТАЛОГ</button>
+            <button class="button" type="button" disabled>Назад</button>
+            <button class="button" type="button">Вперед</button>
+          </li>
         </ul>
 
-        <!-- Слайдер -->
-        <div class="slider">
-          <h2>Перфораторы</h2>
-          <p>Настоящие мужские игрушки</p>
-          <img src="img/foto-slider.jpg" alt="" width="620" height="266">
-          <button class="button" type="button">ОТКРЫТЬ КАТАЛОГ</button>
-          <button class="button" type="button" disabled>Назад</button>
-          <button class="button" type="button">Вперед</button>
-        </div>
+    
         
       </section>
       <!-- Блок с баннерами /-->
@@ -286,37 +295,40 @@
 
       <!-- / Блок о компании  -->
       <section class="about-company">
-        <h2 class="block-title">Компания «Техномарт»</h2>
-        <p>
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
-          ремонта и строительства не оставит равнодушными любителей сэкономить на <br>
-          гастарбайтерах.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России! <br>
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul class="about_company_list">
-          <li class="about_company_list_item">Деловые линии</li>
-          <li class="about_company_list_item">Автотрейдинг</li>
-          <li class="about_company_list_item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="#" class="about_company_link">Подробнее о компании</a>
-      </section>
+        <div class="about-company-item">
+            <h2 class="block-title">Компания «Техномарт»</h2>
+            <p>
+              Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
+              ремонта и строительства не оставит равнодушными любителей сэкономить на <br>
+              гастарбайтерах.
+            </p>
+            <p>
+              Мы можем доставить ваш товар в самые отдаленные точки России! <br>
+              Техномарт работает со многими транспортными компаниями:
+            </p>
+            <ul class="about_company_list">
+              <li class="about_company_list_item">Деловые линии</li>
+              <li class="about_company_list_item">Автотрейдинг</li>
+              <li class="about_company_list_item">ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="button" href="#" class="about_company_link">Подробнее о компании</a>
+        </div>
       <!--  Блок о компании  /-->
 
 
       <!-- /Блок Контакты -->
-      <section class="contacts">
-        <h2 class="block-title">Контакты</h2>
-        <p>
-          Вы можете забрать товар сами, <br>
-          заехав в наш офис:
-        </p>
-        <img src="img/map_mini.png" alt="Карта проезда" width="300" height="158">
-        <button type="button" class="map_pop_up button">Заблудились? Напишите нам!</button>
+      <div class="about-company-item">
+        <section class="contacts">
+          <h2 class="block-title">Контакты</h2>
+          <p>
+            Вы можете забрать товар сами, <br>
+            заехав в наш офис:
+          </p>
+          <img src="img/map_mini.png" alt="Карта проезда" width="300" height="158">
+          <button type="button" class="map_pop_up button">Заблудились? Напишите нам!</button>
 
-      </section>
+        </section>
+      </div>
       <!-- Блок Контакты /-->
 
     </main>
