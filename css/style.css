@@ -349,10 +349,40 @@ img {
 /* footer */
 
 .footer-big {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--basic-grey);
     color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
+}
+
+.nav-static-ages-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+}
+
+.nav-catalog-footer-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.copyright {
+    display: grid; 
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.social-list {
+    display: grid; 
+    grid-template-columns: auto auto auto;
+}
+
+.copyright-contact-list {
+    display: grid; 
+    grid-template-columns: auto auto ;
 }
 
 .contacts-phone-footer {
