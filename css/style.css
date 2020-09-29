@@ -23,13 +23,7 @@
     --special-warning: #FFBF47;
     --special-error: #BA2732;
   }
-.button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-}
+
 
 
 /* Global */
@@ -49,12 +43,26 @@
     box-sizing: border-box;
   }
 
-.page{
-    margin: 0 auto;
-    width: 940px;
-    min-width: 940px; 
 
+
+.button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
 }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  
 
 a {
     text-decoration: none;
@@ -69,16 +77,26 @@ img {
     height: auto;
 }
 
+.container{
+    margin: 0 auto;
+    width: 960px;
+    padding: 0 10px;
+}
 
 
 
   /* header */
 
 .main-header{
-    display: grid;
-    height: 320px;
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
     background-color: var(--basic-background);
+    height: 320px;
 }
+
+
+
 
 
 .top-menu-list {
@@ -88,15 +106,15 @@ img {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    background-color: var(--basic-grey);
-    width: 940px ; 
-    height: 42px;
+    background-color: var(--basic-grey); 
+    min-height: 42px;
   }
 
   .midl-menu-list{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    width: 940px ;
   }
 
   .button-order{
@@ -115,6 +133,7 @@ img {
     background-color: var(--basic-grey);
     height: 60px;
     margin-bottom: 62px;
+    width: 940px ;
  
   }
 
@@ -139,6 +158,11 @@ img {
 .promo-item {
     width: 300px;
     height: 123px;
+}
+
+.promo-slider{
+    width: 620px;
+    height: 266px;
 }
 
 .promo-item-material {
@@ -182,7 +206,10 @@ img {
 
 /* Топ товаров */
 .block-header {
+    width: 940px;
+    height: 89px;
     display: flex;
+    background-color: var(--basic-gold);
     flex-direction: row;
     align-items:center;
 }
@@ -191,9 +218,10 @@ img {
 }
 
 .top-products-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .top-products-item {
@@ -206,11 +234,11 @@ img {
 
 /* Топ производители */
 .top-manufacturers-list {
+    width: 940px;
     list-style: none;
-    display: grid;
-    grid-template-columns:  220px 220px 220px 220px;
-    grid-template-rows: 145px 145px 145px 145px;
-    gap: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Сервисы */
