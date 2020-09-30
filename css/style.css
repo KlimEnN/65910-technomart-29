@@ -121,14 +121,26 @@ img {
     color: var(--basic-red);
   }
 
+ 
+
   .contacts-phone-header{
-      display: flex;
-      width: 270px;
-      height: 45px;
-      color: var(--basic-red);
-      font-size: 21px;
-      border: 3px solid white;
+    display: flex;
+    width: 270px;
+    height: 45px;
+    color: var(--basic-red);
+    font-size: 21px;
+    border: 3px solid white;
+      
   }
+
+  .contacts-phone-header span {
+    align-self: center;
+    margin: auto;
+  }
+
+ 
+
+
 
   .midl-menu-list{
     display: flex;
@@ -284,10 +296,17 @@ img {
 /* Сервисы */
 
 /* О компании*/
-.about-company{
-    display: grid;
-    grid-template-columns: 1fr  1fr ;
+
+
+.about-company .container{
+    display: flex;
+    flex-grow: 1 1;
 }
+
+.about-company {
+    margin-top: 70px ;
+    margin-bottom: 70px ;
+    }
 
 /* Подвал сайта */
 
