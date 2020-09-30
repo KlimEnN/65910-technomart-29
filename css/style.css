@@ -311,7 +311,8 @@ img {
 /* Подвал сайта */
 
 .main-footer {
-    background-color: var(--basic-grey);
+    background-color: #32425C;
+   
 }
 
 .top-footer{
@@ -340,15 +341,43 @@ img {
 .copyright {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: #293449;
+    min-height: 107px;
+    width: 100%;
 }
 
 .social-item {
     display: flex;
-    flex-direction: row;
 }
 
+.social-link img {
+    width: 44px;
+    height: 44px;
+    margin-top: 44px;
+}
 
+.feed-back {
+    display: flex;
+    justify-content: space-between;
+}
 
+.feed-back p{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.feed-back a{
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFD180;
+}
+
+.copyright p{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
 /* ########## страница каталоаг*/
 
 /* Хлебные крошки */
