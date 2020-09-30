@@ -139,6 +139,7 @@ img {
   }
 
  
+ 
 
 
 
@@ -341,9 +342,8 @@ img {
 .copyright {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #293449;
+    background-color: salmon;
     min-height: 107px;
-    width: 100%;
 }
 
 .social-item {
@@ -378,6 +378,8 @@ img {
     line-height: 18px;
     color: var(--basic-white);
 }
+
+
 /* ########## страница каталоаг*/
 
 /* Хлебные крошки */
@@ -398,20 +400,16 @@ img {
 /* Сортировка */
 
 .sorting {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 700px;
+    height: 38px;
     margin-left: 241px;
     background-color: #F7F3EC;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    
 }
 
-.sorting-list{
-    
-}
+
 
 /* Каталог */
 
@@ -436,20 +434,14 @@ img {
     display: flex;
 }
 
-.filter {
-    width: 220px;
-    margin-top: -80px;
-}
+
 
 
 .products-list {
     display: grid;
     grid-template-columns:220px 220px 220px;
     gap: 20px 20px;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    
 }
 
 .nav-pages-list{
@@ -461,4 +453,35 @@ img {
 
 .nav-pages-item {
     margin-left: 10px;
+}
+
+/* Фильтр */
+
+.filter {
+    width: 220px;
+    margin-top: -35px;
+}
+
+.filter-color{
+    display: flex;
+    align-items: center;
+    width: 220PX;
+    height: 38px;
+    background-color: #F7F3EC;
+
+}
+
+.filter-heading-top {
+    font-family: 'PT Sans';
+    font-size: 13px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-left: 18px;
+    
+}
+
+.manufacturers-filter{
+    
 }
