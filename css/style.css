@@ -399,6 +399,8 @@ img {
 
 .sorting {
     display: grid;
+    width: 700px;
+    margin-left: 241px;
     background-color: #F7F3EC;
     grid-column-start: 2;
     grid-column-end: 5;
@@ -408,7 +410,7 @@ img {
 }
 
 .sorting-list{
-    margin-left: auto;
+    
 }
 
 /* Каталог */
@@ -431,25 +433,18 @@ img {
 
 
 .catalog {
-    display: grid;
-    grid-template-columns: 220px 220px 220px 220px;
-    grid-template-rows: 38px auto auto auto;
-    gap: 20px 20px;
+    display: flex;
 }
 
 .filter {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    width: 220px;
+    margin-top: -80px;
 }
-
 
 
 .products-list {
     display: grid;
-    grid-template-columns:220px 220px 220px 220px;
+    grid-template-columns:220px 220px 220px;
     gap: 20px 20px;
     grid-column-start: 2;
     grid-column-end: 4;
