@@ -70,6 +70,8 @@ a {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 img {
@@ -88,42 +90,70 @@ img {
   /* header */
 
 .main-header{
-    margin: 0 auto;
-    padding: 0;
-    width: 1200px;
     background-color: var(--basic-background);
-    height: 320px;
+    min-height: 320px;
 }
 
-
-
-
+.top-menu {
+    background-color: var(--basic-grey); 
+}
 
 .top-menu-list {
     margin: 0;
     padding: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    background-color: var(--basic-grey); 
     min-height: 42px;
+  }
+
+  .midl-menu{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    min-height: 156px;
+  }
+  
+  .header-p{
+    padding-left: 30px;
+    color: var(--basic-red);
+  }
+
+  .contacts-phone-header{
+      display: flex;
+      width: 270px;
+      height: 45px;
+      color: var(--basic-red);
+      font-size: 21px;
+      border: 3px solid white;
+  }
+
+  .midl-menu-list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .check-out{
+    display: grid;
+    grid-template-columns:  auto auto;
+    margin-left: auto;
   }
 
   .midl-menu-list{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 940px ;
   }
 
   .button-order{
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
-    background-color: var(--basic-green);
-    
+    background-color: var(--basic-green); 
   }
+
 
   .main-nav-list {
     list-style: none;
@@ -131,10 +161,9 @@ img {
     align-items: center;
     grid-template-columns: auto auto auto auto auto auto auto;
     background-color: var(--basic-grey);
-    height: 60px;
+    min-height: 60px;
     margin-bottom: 62px;
-    width: 940px ;
- 
+    padding: 0 53px;
   }
 
 .main-nav-link {
@@ -146,6 +175,7 @@ img {
   }
 
   /* Promo */
+  
 .promo-list {
     margin-top: 59px;
     display: grid;
@@ -153,6 +183,7 @@ img {
     grid-template-rows: 123px 123px 123px;
     gap: 20px 20px;
     list-style: none;
+    padding: 10px;
 }
 
 .promo-item {
@@ -205,22 +236,28 @@ img {
 }
 
 /* Топ товаров */
+
+.top-product {
+    margin-top: 50px;
+    
+}
+
 .block-header {
-    width: 940px;
-    height: 89px;
     display: flex;
     background-color: var(--basic-gold);
     flex-direction: row;
     align-items:center;
+    margin-bottom: 20px;
 }
+
 .button-link {
     margin-left: auto;
 }
 
 .top-products-list {
-    width: 940px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 20px;
     
 }
 
@@ -233,26 +270,33 @@ img {
 }
 
 /* Топ производители */
+
+.top-manufacturers{
+    margin-top: 50px;
+}
+
 .top-manufacturers-list {
-    width: 940px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
 }
 
 /* Сервисы */
 
 /* О компании*/
-.about-company {
+.about-company{
     display: grid;
-    grid-template-columns: 50%  50%;
+    grid-template-columns: 1fr  1fr ;
 }
 
 /* Подвал сайта */
 
-.top-footer{
+.main-footer {
     background-color: var(--basic-grey);
+}
+
+.top-footer{
+    
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr ;
@@ -275,7 +319,6 @@ img {
 
 
 .copyright {
-    background-color: var(--basic-grey);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -292,9 +335,13 @@ img {
 /* Хлебные крошки */
 .breadcrumb {
     display: flex;
-  
-
 }
+
+.breadcrumb-list {
+    margin-top: 20px;
+    display: flex;
+}
+
 
 .breadcrumb-link {
     margin-right: 20px;
@@ -303,9 +350,13 @@ img {
 /* Сортировка */
 
 .sorting {
-    display: flex;
-    align-items: flex-start;
-    align-content: center;
+    display: grid;
+    background-color: #F7F3EC;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    
 }
 
 .sorting-list{
@@ -314,20 +365,57 @@ img {
 
 /* Каталог */
 
+
+.header-main{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 ;
+    background-color: var(--basic-background);
+}
+
+.block-title{
+    padding-left: 50px;
+    font-family: 'Cuprum';
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+
 .catalog {
     display: grid;
-    grid-template-columns: 220px auto;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 38px auto auto auto;
+    gap: 20px 20px;
 }
 
 .filter {
-    display: flex;
-    flex-direction: column;
-
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
+
 
 
 .products-list {
     display: grid;
-    grid-template-columns: 220px 220px 220px;
+    grid-template-columns:220px 220px 220px 220px;
     gap: 20px 20px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.nav-pages-list{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 220px;
+}
+
+.nav-pages-item {
+    margin-left: 10px;
 }
