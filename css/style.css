@@ -110,8 +110,6 @@ img {
     min-height: 42px;
   }
 
-
-
   .midl-menu{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -154,20 +152,25 @@ img {
     gap: 10px;
   }
 
-.check-out-item {
-    padding: 12px 24px 12px 24px;
-    border: 1px solid #FFD180;
-    background-color: #F4F7F9;
+  .check-out-item {
+      padding: 12px 24px;
+      background-color: var(--basic-white);
   }
 
+  .check-out-link {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+  }
 
-
-  /* .midl-menu-list{
+  .midl-menu-list{
     list-style: none;
     display: flex;
     justify-content: space-between;
   }
-   */
 
   .button-order{
     font-size: 18px;
@@ -273,7 +276,30 @@ img {
 }
 
 .button-link {
+    display: flex;
     margin-left: auto;
+    margin-right: 14px;
+    padding: 11px 24px 9px 24px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+}
+
+.block-header h2 {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-left: 28px;
+    color: var(--basic-grey);
 }
 
 .top-products-list {
@@ -284,12 +310,47 @@ img {
 }
 
 .top-products-item {
-    width: 220px;
+    min-width: 220px;
     height: 318px;
     display: flex;
     flex-direction: column;
-    border: 1px solid grey;
+    border: 1px solid #EAEAEA;
+    align-items: center;
 }
+
+.product-name {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--basic-black);
+    margin-bottom: 50px;
+}
+
+.old-price {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    text-transform: uppercase; 
+    color: var(--basic-oldprice);
+}
+
+.new-price {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-image: url('img/red-button.png') no-repeat center  #EE3643;
+
+}
+
+
 
 /* Топ производители */
 
@@ -306,17 +367,87 @@ img {
 /* Сервисы */
 
 /* О компании*/
-
-
 .about-company .container{
-    display: flex;
-    flex-grow: 1 1;
+display: grid;
+grid-template-columns: 1fr 300px;
+
 }
 
 .about-company {
     margin-top: 70px ;
     margin-bottom: 70px ;
     }
+
+.about-company-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.map_pop_up {
+    margin: 25px 0 25px 0;
+    width: 300px;
+}
+
+.contacts h2 {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.contacts p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.about-company-item {
+    min-width: 450px;
+}
+
+.about-company-item h2 {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.about-company-item p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+}
+.about-company-item ul {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.about-company-item li:not(:last-child) {
+    margin-bottom: 12px; 
+}
+
+.about-company-item li{
+    margin-left: 36px;
+}
+
+.about-company-item .about_company_link{
+   
+}
+
 
 /* Подвал сайта */
 
@@ -432,11 +563,7 @@ img {
 }
 
 .block-title{
-    padding-left: 50px;
-    font-family: 'Cuprum';
-    font-size: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
+   
 }
 
 
