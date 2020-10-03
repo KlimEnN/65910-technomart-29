@@ -110,6 +110,8 @@ img {
     min-height: 42px;
   }
 
+
+
   .midl-menu{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -149,13 +151,23 @@ img {
     display: grid;
     grid-template-columns:  auto auto;
     margin-left: auto;
+    gap: 10px;
   }
 
-  .midl-menu-list{
+.check-out-item {
+    padding: 12px 24px 12px 24px;
+    border: 1px solid #FFD180;
+    background-color: #F4F7F9;
+  }
+
+
+
+  /* .midl-menu-list{
     list-style: none;
     display: flex;
     justify-content: space-between;
   }
+   */
 
   .button-order{
     font-size: 18px;
