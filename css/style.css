@@ -11,8 +11,8 @@
     --basic-gold: #F9F5F0;
     --basic-sel: #F7F3EC;
     --basic-oldprice: #A9A9A9;
-    
-  
+
+
     --special-ylellow: #FFBF47;
     --special-blue: #3BBCE3;
     --special-lilac: #DC91D8;
@@ -22,6 +22,11 @@
     --special-success: #5FBB2D;
     --special-warning: #FFBF47;
     --special-error: #BA2732;
+
+
+    /* Шрифты */
+    --font-primary: 'Cuprum';
+    --font-secodary: 'PT Sans';
   }
 
 
@@ -34,6 +39,8 @@
     padding: 0;
     font-family: 'Cuprum', 'PT Sans',  Arial, sans-serif;
     font-size: 16px;
+    font-style: normal;
+  font-weight: normal;
     line-height: 18px;
     font-weight: 300;
     color: var(--basic-black);
@@ -53,6 +60,11 @@
     background-color: transparent;
 }
 
+.top-item-btn {
+  margin-left: auto;
+  margin-right: 14px;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
@@ -62,7 +74,7 @@
     width: 1px;
     overflow: hidden;
   }
-  
+
 
 a {
     text-decoration: none;
@@ -96,7 +108,7 @@ img {
 }
 
 .top-menu {
-    background-color: var(--basic-grey); 
+    background-color: var(--basic-grey);
 }
 
 .top-menu-list {
@@ -116,7 +128,7 @@ img {
     align-items: center;
     min-height: 156px;
   }
-  
+
   .header-p{
     padding-left: 30px;
     color: var(--basic-red);
@@ -130,7 +142,7 @@ img {
     color: var(--basic-red);
     font-size: 21px;
     border: 3px solid white;
-      
+
   }
 
   .contacts-phone-header span {
@@ -176,7 +188,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
-    background-color: var(--basic-green); 
+    background-color: var(--basic-green);
   }
 
 
@@ -200,7 +212,7 @@ img {
   }
 
   /* Promo */
-  
+
 .promo-list {
     margin-top: 59px;
     display: grid;
@@ -243,7 +255,7 @@ img {
 .promo-item-deliveri{
     background-color: var(--special-warning);
     grid-column-start: 3;
-    grid-row-start: 2; 
+    grid-row-start: 2;
 }
 
 .promo-title {
@@ -264,7 +276,7 @@ img {
 
 .top-product {
     margin-top: 50px;
-    
+
 }
 
 .block-header {
@@ -277,12 +289,8 @@ img {
 
 .button-link {
     display: flex;
-    margin-left: auto;
-    margin-right: 14px;
     padding: 11px 24px 9px 24px;
-    font-family: 'Cuprum';
-    font-style: normal;
-    font-weight: normal;
+    font-family: var(--font-primary);
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -293,8 +301,6 @@ img {
 
 .block-header h2 {
     font-family: 'Cuprum';
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -306,12 +312,12 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 20px;
-    
+
 }
 
 .top-products-item {
     min-width: 220px;
-    height: 318px;
+    min-height: 318px;
     display: flex;
     flex-direction: column;
     border: 1px solid #EAEAEA;
@@ -325,7 +331,7 @@ img {
     font-size: 18px;
     line-height: 20px;
     color: var(--basic-black);
-    margin-bottom: 50px;
+    text-align: center;
 }
 
 .old-price {
@@ -335,22 +341,34 @@ img {
     font-size: 17px;
     line-height: 18px;
     text-decoration-line: line-through;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     color: var(--basic-oldprice);
 }
 
 .new-price {
+    padding:  10px 20px 10px 20px;
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
     text-transform: uppercase;
-    background-image: url('img/red-button.png') no-repeat center  #EE3643;
-
+    background: red;
+    color: var(--basic-white);
 }
 
+.product-foter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 119px;
+  margin-top: auto;
+  margin-bottom: 21px;
+}
 
+.price-off {
+  opacity: 0;
+}
 
 /* Топ производители */
 
@@ -364,13 +382,15 @@ img {
     gap: 20px 20px;
 }
 
+
+
 /* Сервисы */
 
 /* О компании*/
-.about-company .container{
-display: grid;
-grid-template-columns: 1fr 300px;
-
+.columns{
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  min-height: 356px;
 }
 
 .about-company {
@@ -378,14 +398,21 @@ grid-template-columns: 1fr 300px;
     margin-bottom: 70px ;
     }
 
-.about-company-item{
+.about{
     display: flex;
     flex-direction: column;
 }
 
-.map_pop_up {
-    margin: 25px 0 25px 0;
-    width: 300px;
+.contacts{
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.button-show-popup {
+
+
 }
 
 .contacts h2 {
@@ -407,11 +434,8 @@ grid-template-columns: 1fr 300px;
     margin-bottom: 32px;
 }
 
-.about-company-item {
-    min-width: 450px;
-}
 
-.about-company-item h2 {
+.about h2 {
     font-family: 'Cuprum';
     font-style: normal;
     font-weight: normal;
@@ -421,14 +445,14 @@ grid-template-columns: 1fr 300px;
     color: var(--basic-black);
 }
 
-.about-company-item p {
+.about p {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
 }
-.about-company-item ul {
+.about ul {
     font-family: 'Cuprum';
     font-style: normal;
     font-weight: normal;
@@ -437,15 +461,16 @@ grid-template-columns: 1fr 300px;
 }
 
 .about-company-item li:not(:last-child) {
-    margin-bottom: 12px; 
+    margin-bottom: 12px;
 }
 
 .about-company-item li{
     margin-left: 36px;
 }
 
-.about-company-item .about_company_link{
-   
+.about_company_link {
+  margin-top: auto;
+  min-width: 220px;
 }
 
 
@@ -453,15 +478,16 @@ grid-template-columns: 1fr 300px;
 
 .main-footer {
     background-color: #32425C;
-   
+
 }
 
 .top-footer{
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr ;
 }
+
 
 .adres-footer{
     grid-column-start: 1;
@@ -469,25 +495,31 @@ grid-template-columns: 1fr 300px;
 }
 
 .nav-static-ages-list {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-catalog-footer-list {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
-
 
 .copyright {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: salmon;
-    min-height: 107px;
+  background-color: #293449;
 }
 
-.social-item {
+.footer-wriper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    min-height: 107px;
+    align-items: center;
+}
+
+.social-list {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -540,85 +572,52 @@ grid-template-columns: 1fr 300px;
 
 /* Сортировка */
 
-.sorting {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 700px;
-    height: 38px;
-    margin-left: 241px;
-    background-color: var(--basic-sel);
+.catalog-wriper-sorting{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 30px auto;
+  gap: 20px ;
 }
 
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  height: 38px;
+  background-color: var(--basic-sel);
+}
+
+.filter-color {
+  display: flex;
+  align-items: center;
+}
 
 
 /* Каталог */
 
 
-.header-main{
-    display: flex;
-    align-items: center;
-    margin: 20px 0 ;
-    background-color: var(--basic-background);
+
+.catalog-wriper{
+  display: grid;
+  grid-template-columns: 220px auto;
+  gap: 20px 20px;
 }
-
-.block-title{
-   
-}
-
-
-.catalog {
-    display: flex;
-}
-
-
 
 
 .products-list {
-    display: grid;
-    grid-template-columns:220px 220px 220px;
-    gap: 20px;
-    
-}
-
-.nav-pages-list{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    padding-left: 220px;
-}
-
-.nav-pages-item {
-    margin-left: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px;
 }
 
 /* Фильтр */
 
-.filter {
-    width: 220px;
-  
-}
 
-.filter-color{
-    display: flex;
-    align-items: center;
-    min-width: 220px;
-    height: 38px;
-    background-color: var(--basic-sel);
+/* `page navigation */
 
-}
-
-.filter-heading-top {
-    font-family: 'PT Sans';
-    font-size: 13px;
-    line-height: 18px;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
-    margin-left: 18px;
-    
-}
-
-.manufacturers-filter{
-    
+.nav-pages-list {
+  display: flex;
+  font: 1em sans-serif;
+  margin-left: 250px;
 }
