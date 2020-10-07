@@ -107,6 +107,16 @@ img {
     min-height: 320px;
 }
 
+.logo-link {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  width: 220px;
+  height: 47px;
+  background: #EE3643;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
 .top-menu {
     background-color: var(--basic-grey);
 }
@@ -114,13 +124,50 @@ img {
 .top-menu-list {
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
     min-height: 42px;
+    margin-left: 238px;
   }
+.top-menu-item span {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.button-order {
+  font-family: 'Cuprum';
+  width: 150px;
+  height: 42px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.search {
+  background-color: var(--basic-grey);
+  border: 0;
+  font-family: 'Cuprum';
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  background-image: url("img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+#placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
 
   .midl-menu{
     display: grid;
