@@ -276,7 +276,6 @@ img {
 
 .top-product {
     margin-top: 50px;
-
 }
 
 .block-header {
@@ -286,6 +285,8 @@ img {
     align-items:center;
     margin-bottom: 20px;
 }
+
+
 
 .button-link {
     display: flex;
@@ -323,6 +324,7 @@ img {
     border: 1px solid #EAEAEA;
     align-items: center;
 }
+
 
 .product-name {
     font-family: 'PT Sans';
