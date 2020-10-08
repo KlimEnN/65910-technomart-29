@@ -113,8 +113,16 @@ img {
   background-color: var(--basic-red);
   margin-right: 0;
   box-shadow: 0 5px 0 0 #bb3a43;
-
+  user-select: none;
 }
+
+.logo:active {
+  background-color: var(--special-error);
+  
+}
+
+
+
 .top-menu {
     background-color: var(--basic-grey);
 }
@@ -138,25 +146,36 @@ img {
 .card {
   display: flex;
   align-items: center;
-  margin-right: 26px;
 }
 
 .icon-cart {
   width: 15px;
   height: 15px;
   margin-right: 8px;
+  margin-left: 20px;
 }
 
-.bookmark {
+.bookmark,
+.card {
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  width: 150px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.bookmark:active,
+.card:active {
+  background-color: #161D29;
+  opacity: 50%;
+  user-select: none;
 }
 
 .icon-bookmark {
   width: 14px;
   height: 16px;
   margin-right: 9px;
+  margin-left: 20px;
 }
 
 .top-menu-item span {
@@ -179,8 +198,11 @@ img {
 
 
 .button-order:hover {
-  background-color: red:
-    
+  background-color: #5FBB2D;
+}
+
+.button-order:active {
+  opacity: 50%;
 }
 
 .search {
@@ -199,8 +221,12 @@ img {
   width: 17px;
   height: 17px;
   margin-right: 8px;
+  cursor: pointer;
 }
 
+.icon-search:hover path{
+  fill: var(--basic-white);
+}
 
   .midl-menu{
     display: grid;
@@ -315,6 +341,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     text-decoration: none;
+    
     color: var(--basic-white);
   }
 
