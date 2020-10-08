@@ -126,12 +126,24 @@ img {
     padding: 0;
     /* width: 100%; */
     display: flex;
-    justify-content: space-between;
+
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
     min-height: 42px;
     margin-left: 238px;
   }
+
+.card {
+
+  margin-right: 26px;
+}
+
+.bookmark {
+  margin-right: 56px;
+}
+
+
 .top-menu-item span {
   font-size: 18px;
   line-height: 24px;
@@ -147,32 +159,26 @@ img {
 }
 
 .search {
+  display: flex;
   background-color: var(--basic-grey);
   border: 0;
   font-family: 'Cuprum';
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+  margin-right: 202px;
 }
 
-.search::before {
-  content: "";
-  position: absolute;
-  top: 27px;
-  left: 24px;
-  width: 16px;
-  height: 18px;
-  background-image: url("img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
+
 
 .icon {
-  position: absolute;
   width: 20px;
   height: 17px;
-  color: #000000 ;
+  margin-right: 8px;
+
 }
+
+
 
   .midl-menu{
     display: grid;
