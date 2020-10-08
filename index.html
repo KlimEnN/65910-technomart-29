@@ -21,25 +21,28 @@
                 <nav class="top-menu">
                     <div class="container">
                         <div class="top-header-wrapper">
+
+
                         
-                                <a class="logo-link" href="">
+                                <a class="logo" href="">
                                     <img class="logo-top" src="img/logo-technomart.svg" alt="" width="108" height="18">
                                 </a>
                     
                             <ul class="top-menu-list">
                             <li class="top-menu-item">
                     
-                                <button class="search" type="submit">Поиск:
-                                    <svg class="icon"><use xlink:href="#icon-search"></use></svg>
-                                </button>
+                                <form class="search" action="">
+                                    <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
+                                    <input type="text">
+                                </form>
                         
                             </li>
                             <li class="top-menu-item bookmark">
-                                <svg class="icon"><use xlink:href="#icon-bookmark"></use></svg>
+                                <svg class="icon icon-bookmark"><use xlink:href="#icon-bookmark"></use></svg>
                                 <span>Закладки: 0</span>
                             </li>
                             <li class="top-menu-item card">
-                                <svg class="icon"><use xlink:href="#icon-cart"></use></svg>
+                                <svg class="icon-cart"><use xlink:href="#icon-cart"></use></svg>
                                 <span>Корзина: 0</span>
                             </li>
                             <li class="top-menu-item">
@@ -53,22 +56,30 @@
                 <div class="container">
                     <nav class="midl-menu">
                         <p class="header-p">
-                            Интернет-магазинстроительных <br>
-                            материалови инструментов <br>
+                            Интернет-магазин <br>строительных 
+                            материалов <br> и инструментов 
                             для ремонта
                         </p>
                         <ul class="midl-menu-list">
                                 <li class="midl-menu-item">
-                                    <a class="contacts-phone-header" href="tel:+78125550555"><span> +7 (812) 555-05-55</span></a>
+
+                                    <a class="contacts-phone-header" href="tel:+78125550555">
+                                        <span> 
+                                        <svg class="icon-phone"><use xlink:href="#icon-phone"></use></svg>
+                                        +7 (812) 555-05-55
+                                        </span>
+                                    </a>
                                 </li>
                                 <li>
+                                    <p class="adres-header">
                                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                                    </p>
                                 </li>
                          </ul>
                         <ul class="check-out">
                                 <li class="check-out-item">
                                     <a href="#" class="check-out-link">
-                                        <svg class="icon"><use xlink:href="#login"></use></svg>
+                                        <svg class="icon-login"><use xlink:href="#icon-login"></use></svg>
                                         Войти
                                     </a>
 
@@ -105,6 +116,9 @@
                             </li>
                             <li class="main-nav-item">
                                 <a href="#" class="main-nav-link">Контакты</a>
+                            </li>
+                           
+                            
                             </li>
                         </ul>
                     </div>
@@ -505,20 +519,18 @@
               <path d="M2 8v4h4V8h2v4h4V8L7 3.516 2 8z" fill="#C1C6CE"></path>
               <path d="M13.831 6.365L12 4.751V0h-2v2.987L7.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C7.062.521 7.032.515 7 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037L.171 6.365a.501.501 0 0 0 .661.75L7 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z" fill="#C1C6CE"></path>
             </symbol>
-            <symbol viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-bookmark">
-              <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z" fill="#C5C5C5"></path>
-              <path d="M16.177 15.01H11.39V17h4.787c2.074 0 2.861-1.81 2.885-3.026V3.028C19.038 1.811 18.252 0 16.177 0H11.39v1.99h4.787c.8 0 .945.681.962 1.057v10.904c-.016.376-.163 1.059-.962 1.059z" fill="#C5C5C5"></path>
-            </symbol>
+            <symbol viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-bookmark">
+                <path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" fill="#fff" opacity=".3"></path>
+              </symbol>
             <symbol viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-cart">
               <path d="M4.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951V2z" opacity=".3" fill="#fff"></path>
             </symbol>
             <symbol viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-home">
               <path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" fill="#fff" opacity=".3"></path>
             </symbol>
-            <symbol viewBox="0 0 20 17" xmlns="http://www.w3.org/2000/svg" id="login">
-                <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z"></path>
-                <path d="M16.177 15.01H11.39V17h4.787c2.074 0 2.861-1.81 2.885-3.026V3.028C19.038 1.811 18.252 0 16.177 0H11.39v1.99h4.787c.8 0 .945.681.962 1.057v10.904c-.016.376-.163 1.059-.962 1.059z">
-                </path>
+            <symbol viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-login">
+                <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z" fill="#C5C5C5"></path>
+                <path d="M16.177 15.01H11.39V17h4.787c2.074 0 2.861-1.81 2.885-3.026V3.028C19.038 1.811 18.252 0 16.177 0H11.39v1.99h4.787c.8 0 .945.681.962 1.057v10.904c-.016.376-.163 1.059-.962 1.059z" fill="#C5C5C5"></path>
               </symbol>
             <symbol viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-phone">
               <path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z" fill="#B7BFC8"></path>
@@ -536,7 +548,7 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z" fill="#212A3A"></path>
               <path d="M24.54 25.728c.92-.29 2.1 1.913 3.354 2.755.942.639 1.663.501 1.663.501l3.345-.047s1.748-.105.921-1.457c-.068-.112-.484-1.002-2.489-2.833-2.096-1.915-1.812-1.605.712-4.916 1.538-2.019 2.153-3.251 1.96-3.776-.185-.506-1.314-.374-1.314-.374l-3.768.025c-.367 0-.678.111-.82.483-.003.004-.598 1.562-1.391 2.886-1.677 2.802-2.346 2.952-2.623 2.776-.637-.406-.476-1.628-.476-2.497 0-2.716.416-3.849-.815-4.141-.411-.098-.711-.161-1.76-.17-1.34-.02-2.479 0-3.124.308-.428.209-.757.667-.557.693.25.033.811.15 1.112.55.386.517.374 1.677.374 1.677s.22 3.198-.52 3.594c-.508.272-1.203-.283-2.699-2.827-.764-1.301-1.34-2.74-1.34-2.74s-.112-.267-.314-.413c-.241-.173-.578-.229-.578-.229l-3.576.023s-.538.015-.735.245c-.175.205-.015.627-.015.627s2.802 6.45 5.974 9.7c2.908 2.983 6.213 2.785 6.213 2.785h1.497s.452-.05.683-.292c.215-.225.206-.648.206-.648s-.03-1.977.9-2.268z" fill="#fff"></path>
             </symbol>
-            <symbol viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-search"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 0 1 7.5 15 7.5 7.5 0 1 1 15 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 0 0 2 7.5 5.506 5.506 0 0 0 7.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" fill="#000000" opacity=".3"></path></symbol></svg>
+            <symbol viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-search"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 0 1 7.5 15 7.5 7.5 0 1 1 15 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 0 0 2 7.5 5.506 5.506 0 0 0 7.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" fill="#FFFFFF" opacity=".3"></path></symbol></svg>
 
         </svg>
 

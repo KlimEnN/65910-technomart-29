@@ -4,7 +4,7 @@
     --basic-red:red;
     --basic-green: #63A63E;
     --basic-grey: #32425C;
-    --basic-greylight: #F2F6F8;
+    --basic-greylight: #C5C5C5;
     --basic-background: #F4F7F9;
     --basic-white: #ffffff;
     --basic-black: #000000;
@@ -57,7 +57,7 @@
     border: none;
     font: inherit;
     color: inherit;
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 
 .top-item-btn {
@@ -107,14 +107,13 @@ img {
     min-height: 320px;
 }
 
-.logo-link {
-  display: flex;
-  justify-content: center;
-  top: 0%;
-  width: 220px;
-  height: 47px;
-  background: var(--basic-red);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+.logo {
+  display: relative;
+  padding: 13px 57px 4px 56px;
+  background-color: var(--basic-red);
+  margin-right: 0;
+  box-shadow: 0 5px 0 0 #bb3a43;
+
 }
 .top-menu {
     background-color: var(--basic-grey);
@@ -123,7 +122,6 @@ img {
 .top-menu-list {
     margin: 0;
     padding: 0;
-    /* width: 100%; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -135,20 +133,34 @@ img {
 .top-header-wrapper {
   display: flex;
   justify-content: space-between;
-  
 }
 
-/* .card {
+.card {
+  display: flex;
+  align-items: center;
+  margin-right: 26px;
+}
 
-  margin-right: 30px;
+.icon-cart {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
 }
 
 .bookmark {
-  margin-right: 60px; */
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
 }
 
+.icon-bookmark {
+  width: 14px;
+  height: 16px;
+  margin-right: 9px;
+}
 
 .top-menu-item span {
+  
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -160,28 +172,34 @@ img {
   height: 42px;
   font-size: 18px;
   line-height: 24px;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  cursor: pointer;
+}
+
+
+.button-order:hover {
+  background-color: red:
+    
 }
 
 .search {
   display: flex;
+  align-items: center;
   background-color: var(--basic-grey);
   border: 0;
   font-family: 'Cuprum';
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
-  /* margin-right: 202px; */
+  margin-right: 80px;
 }
 
-
-
-.icon {
-  width: 20px;
+.icon-search {
+  width: 17px;
   height: 17px;
   margin-right: 8px;
-
 }
-
 
 
   .midl-menu{
@@ -193,26 +211,44 @@ img {
 
   .header-p{
     padding-left: 30px;
+    font-family: 'Cuprum';
+    font-style: italic;
+    line-height: 23px;
     color: var(--basic-red);
   }
 
+.adres-header {
+  margin-top: 3px;
+  font-family: 'Cuprum';
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+}
 
   .contacts-phone-header{
     display: flex;
+    align-items: center;
     width: 270px;
     height: 45px;
     color: var(--basic-red);
-    font-size: 21px;
     border: 3px solid white;
 
   }
 
   .contacts-phone-header span {
-    align-self: center;
+    display: flex;
+    align-items: center;
     margin: auto;
+    font-size: 21px;
+    line-height: 30px;
   }
 
-
+.icon-phone {
+  width: 19px;
+  height: 19px;
+  margin-right: 16px;
+}
 
   .midl-menu-list{
     display: flex;
@@ -232,13 +268,28 @@ img {
   }
 
   .check-out-link {
-    font-family: 'Cuprum';
-    font-style: normal;
-    font-weight: normal;
+    display: flex;
+    align-items: center;
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
   }
+
+  .check-out-link:hover {
+    color: var(--basic-red);
+  }
+
+  .check-out-link:active {
+    color: var(--basic-greylight);
+  }
+
+  .icon-login {
+    width: 20px;
+    height: 17px;
+    margin-right: 6px;
+  }
+
+  
 
   .midl-menu-list{
     list-style: none;
@@ -246,19 +297,14 @@ img {
     justify-content: space-between;
   }
 
-  .button-order{
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--basic-white);
-    background-color: var(--basic-green);
-  }
-
 
   .main-nav-list {
     list-style: none;
-    display: grid;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    flex-wrap: wrap;
+    max-width: 960px;
     background-color: var(--basic-grey);
     min-height: 60px;
     margin-bottom: 62px;
@@ -266,7 +312,6 @@ img {
   }
 
 .main-nav-link {
-    font-family: 'Cuprum';
     font-size: 18px;
     line-height: 24px;
     text-decoration: none;
@@ -671,6 +716,9 @@ img {
   align-items: center;
 }
 
+.midl-menu-item {
+  display: flex;
+}
 
 /* Каталог */
 
