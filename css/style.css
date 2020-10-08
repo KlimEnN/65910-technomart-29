@@ -110,7 +110,6 @@ img {
 .logo-link {
   display: flex;
   justify-content: center;
-  position: absolute;
   top: 0%;
   width: 220px;
   height: 47px;
@@ -126,21 +125,26 @@ img {
     padding: 0;
     /* width: 100%; */
     display: flex;
-
     justify-content: flex-end;
     align-items: center;
     list-style: none;
     min-height: 42px;
-    margin-left: 238px;
+    
   }
 
-.card {
+.top-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  
+}
 
-  margin-right: 26px;
+/* .card {
+
+  margin-right: 30px;
 }
 
 .bookmark {
-  margin-right: 56px;
+  margin-right: 60px; */
 }
 
 
@@ -166,7 +170,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
-  margin-right: 202px;
+  /* margin-right: 202px; */
 }
 
 
