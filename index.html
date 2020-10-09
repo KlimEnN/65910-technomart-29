@@ -397,14 +397,17 @@
             <div class="container">
                 <section class="top-footer">
 
-                    <a class="logo-footer" href="">
-                        <img src="img/logo-technomart2.svg" alt="Логотип компании Техномарт" width="138" height="23">
-                    </a>
-                    <p class="adres-footer">
-                        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-                        <a class="contacts-phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                    </p>
+                    <div class="footer-left-side">
+                        <a class="logo-footer" href="">
+                            <img src="img/logo-technomart2.svg" alt="Логотип компании Техномарт" width="138" height="23">
+                        </a>
+                        <p class="adres-footer">
+                            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+                            <a class="contacts-phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                        </p>
+                    </div>
 
+                <div class="footer-right-side">
                     <nav class="nav-static-pages">
                         <ul class="nav-static-ages-list">
                             <li class="nav-static-pages-item">
@@ -440,6 +443,7 @@
                             </li>
                         </ul>
                     </nav>
+                </div>
 
                 </section>
             </div>
@@ -455,29 +459,29 @@
                         <ul class="social-list">
                             <li class="social-item">
                                 <a class="social-link" href="https://vk.com/" target="_blank">
-                                    <img src="img/icon-vk.svg" alt="Вконтакте" width="44" height="44">
+                                    <svg class="icon-social"><use xlink:href="#vc"></use></svg>
                                 </a>
                             </li>
                             <li class="social-item">
                                 <a class="social-link" href="https://www.facebook.com/" target="_blank">
-                                    <img src="img/icon-fb.svg" alt="" width="44" height="44">
+                                    <svg class="icon-social"><use xlink:href="#fb"></use></svg>
                                 </a>
                             </li>
                             <li class="social-item">
                                 <a class="social-link" href="https://www.instagram.com/?hl=ru" target="_blank">
-                                    <img src="img/icon-insta.svg" alt="" width="44" height="44">
+                                    <svg class="icon-social"><use xlink:href="#instagram"></use></svg>
                                 </a>
                             </li>
                         </ul>
 
                         <div class="feedback">
-                            <div>
+                            <div class="section1-feedback">
                                 <p>Обратная связь:</p>
                                 <a class="contact-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                             </div>
 
-                            <div>
-                                <p>Разработано</p>
+                            <div class="section2-feedback">
+                                <p>Разработано —</p>
                                 <a class="contact-link" href="htmlacademy.ru"> htmlacademy.ru</a>
                             </div>
                         </div>
@@ -540,16 +544,15 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M21.894 1.484c11.23 0 20.333 9.103 20.333 20.333 0 11.23-9.104 20.332-20.333 20.332-11.23 0-20.333-9.103-20.333-20.332 0-11.23 9.103-20.333 20.333-20.333z" fill="#212A3A"></path>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H14c-1.65 0-3-1.35-3-3V14c0-1.65 1.35-3 3-3zm11 10.5c0-1.93-1.57-3.5-3.5-3.5S18 19.57 18 21.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5zM14 29v-9h1.181A6.48 6.48 0 0 0 15 21.5a6.5 6.5 0 1 0 13 0 6.451 6.451 0 0 0-.181-1.5H29v9H14zm11-11h4v-4h-4v4z" fill="#fff"></path>
             </symbol>
-            <symbol viewBox="0 0 78 63" fill="none" xmlns="http://www.w3.org/2000/svg" id="instagram">
-              <path d="M25.983 63a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15zm33.999 0a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z" fill="#fff"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.062 0H64s14 14.812 14 33.688v15.25s-.188 4.062-3.125 4.063h-1.709c-1.174-6.261-6.659-11-13.26-11-6.6 0-12.086 4.739-13.26 11h-7.404c-1.174-6.261-6.659-11-13.259-11-6.6 0-12.086 4.739-13.259 11h-2.099s-2.564-.624-2.564-3.812V33.574l14.751-.76s5.483-.603 6.29-3.756L5.446 27.804a3.375 3.375 0 1 1 0-6.75h9.056l8.31-.428s8.177-.608 8.938-3.805l-.196-.043-28.085-1.84a3.469 3.469 0 1 1 0-6.938h4.593V3.125S7.874 0 11.062 0zM52 8.938v15h15.812l-5.75-15H52z" fill="#fff"></path>
-            </symbol>
+            <symbol viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" id="instagram">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.894 1.484c11.23 0 20.333 9.103 20.333 20.333 0 11.23-9.104 20.332-20.333 20.332-11.23 0-20.333-9.103-20.333-20.332 0-11.23 9.103-20.333 20.333-20.333z" fill="#212A3A"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H14c-1.65 0-3-1.35-3-3V14c0-1.65 1.35-3 3-3zm11 10.5c0-1.93-1.57-3.5-3.5-3.5S18 19.57 18 21.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5zM14 29v-9h1.181A6.48 6.48 0 0 0 15 21.5a6.5 6.5 0 1 0 13 0 6.451 6.451 0 0 0-.181-1.5H29v9H14zm11-11h4v-4h-4v4z" fill="#fff"></path>
+              </symbol>
             <symbol viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" id="vc">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z" fill="#212A3A"></path>
               <path d="M24.54 25.728c.92-.29 2.1 1.913 3.354 2.755.942.639 1.663.501 1.663.501l3.345-.047s1.748-.105.921-1.457c-.068-.112-.484-1.002-2.489-2.833-2.096-1.915-1.812-1.605.712-4.916 1.538-2.019 2.153-3.251 1.96-3.776-.185-.506-1.314-.374-1.314-.374l-3.768.025c-.367 0-.678.111-.82.483-.003.004-.598 1.562-1.391 2.886-1.677 2.802-2.346 2.952-2.623 2.776-.637-.406-.476-1.628-.476-2.497 0-2.716.416-3.849-.815-4.141-.411-.098-.711-.161-1.76-.17-1.34-.02-2.479 0-3.124.308-.428.209-.757.667-.557.693.25.033.811.15 1.112.55.386.517.374 1.677.374 1.677s.22 3.198-.52 3.594c-.508.272-1.203-.283-2.699-2.827-.764-1.301-1.34-2.74-1.34-2.74s-.112-.267-.314-.413c-.241-.173-.578-.229-.578-.229l-3.576.023s-.538.015-.735.245c-.175.205-.015.627-.015.627s2.802 6.45 5.974 9.7c2.908 2.983 6.213 2.785 6.213 2.785h1.497s.452-.05.683-.292c.215-.225.206-.648.206-.648s-.03-1.977.9-2.268z" fill="#fff"></path>
             </symbol>
             <symbol viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-search"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 0 1 7.5 15 7.5 7.5 0 1 1 15 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 0 0 2 7.5 5.506 5.506 0 0 0 7.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" fill="#FFFFFF" opacity=".3"></path></symbol></svg>
-
         </svg>
 
 </body>
