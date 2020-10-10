@@ -22,20 +22,18 @@
                     <div class="container">
                         <div class="top-header-wrapper">
 
-
-                        
                                 <a class="logo" >
                                     <img class="logo-top" src="img/logo-technomart.svg" alt="" width="108" height="18">
                                 </a>
-                    
+
                             <ul class="top-menu-list">
                             <li class="top-menu-item">
-                    
-                                <form class="search" action="">
+
+                                <form class="search" action="/find.cgi" method=post enctype="multipart/form-data">
                                     <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
-                                    <input type="text">
+                                    <input class="search-input" type="text" placeholder="Поиск:">
                                 </form>
-                        
+
                             </li>
                             <li class="top-menu-item bookmark">
                                 <svg class="icon icon-bookmark"><use xlink:href="#icon-bookmark"></use></svg>
@@ -55,18 +53,18 @@
 
                 <div class="container">
                     <nav class="midl-menu">
-                        <p class="header-p">
-                            Интернет-магазин <br>строительных 
-                            материалов <br> и инструментов 
+                        <div class="header-p">
+                            Интернет-магазин <br>строительных
+                            материалов <br> и инструментов
                             для ремонта
-                        </p>
+                        </div>
                         <ul class="midl-menu-list">
                                 <li class="midl-menu-item">
 
                                     <a class="contacts-phone-header" href="tel:+78125550555">
-                                        <span> 
+                                        <span>
                                         <svg class="icon-phone"><use xlink:href="#icon-phone"></use></svg>
-                                        +7 (812) 555-05-55
+                                         <span class="phone">+7 (812) 555-05-55</span>
                                         </span>
                                     </a>
                                 </li>
@@ -86,7 +84,7 @@
                                 </li>
                                 <li class="check-out-item">
                                     <a href="#" class="check-out-link" >Регистрация
-                                       
+
                                     </a>
                                 </li>
                         </ul>
@@ -117,9 +115,8 @@
                             <li class="main-nav-item">
                                 <a href="#" class="main-nav-link">Контакты</a>
                             </li>
-                           
-                            
-                            </li>
+
+
                         </ul>
                     </div>
                 </nav>
@@ -182,7 +179,7 @@
             </div>
             <ul class="top-products-list">
                 <li class="top-products-item">
-                    
+
                     <p class="catalog-item-image" >
                         <img src="img/bosch-bgf-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
                     </p>
@@ -192,7 +189,7 @@
                           32500 Р.
                       </div>
                       <div class="new-price">
-                        <span>25500 Р.</span> 
+                        <span>25500 Р.</span>
                       </div>
                     </div>
                 </li>
@@ -206,10 +203,10 @@
                       <h3 class="product-name">Перфоратор BOSCH<br>BFG 3000</h3>
                     </a>
                       <div class="old-price">
-                        <span>22500 Р.
+                        <span>22500 Р.</span>
                       </div>
                       <div class="new-price">
-                          <span>15500 Р.</span> 
+                          <span>15500 Р.</span>
                       </div>
                     </div>
                 </li>
@@ -224,7 +221,7 @@
                           30500 Р.
                       </div>
                       <div class="new-price">
-                        <span>25500 Р.</span> 
+                        <span>25500 Р.</span>
                       </div>
                     </div>
                 </li>
@@ -239,11 +236,11 @@
                         12500 Р.
                       </div>
                       <div class="new-price">
-                        <span> 12500 Р.</span> 
+                        <span> 12500 Р.</span>
                       </div>
                     </div>
                 </li>
-                
+
             </ul>
             </div>
         </section>
@@ -384,7 +381,7 @@
                       заехав в наш офис:
                     </p>
                     <img src="img/map_mini.png" alt="Карта проезда" width="300" height="158">
-                    <button type="button " class="button-show-popup button button-link">Заблудились? Напишите нам!</button>
+                    <button type="button" class="button-show-popup button button-link">Заблудились? Напишите нам!</button>
                 </div>
               </div>
             </div>
@@ -501,9 +498,9 @@
             <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </section>
 
-        
 
-        
+
+
         <svg width="0" height="0">
             <symbol viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg" id="checkbox-on">
               <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829L12.24 12.439 7.285 7.486z" fill="#C5C5C5"></path>
@@ -548,7 +545,7 @@
             <symbol viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-phone">
               <path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z" fill="#B7BFC8"></path>
             </symbol>
-           
+
             <symbol viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-user">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M21.894 1.484c11.23 0 20.333 9.103 20.333 20.333 0 11.23-9.104 20.332-20.333 20.332-11.23 0-20.333-9.103-20.333-20.332 0-11.23 9.103-20.333 20.333-20.333z" fill="#212A3A"></path>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H14c-1.65 0-3-1.35-3-3V14c0-1.65 1.35-3 3-3zm11 10.5c0-1.93-1.57-3.5-3.5-3.5S18 19.57 18 21.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5zM14 29v-9h1.181A6.48 6.48 0 0 0 15 21.5a6.5 6.5 0 1 0 13 0 6.451 6.451 0 0 0-.181-1.5H29v9H14zm11-11h4v-4h-4v4z" fill="#fff"></path>
