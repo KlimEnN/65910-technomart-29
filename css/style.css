@@ -34,7 +34,6 @@
   margin: 0;
   padding: 0;
 
-  font-weight: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -59,11 +58,18 @@
 }
 
 .button-link:hover {
-  background-color: #CA2C37;
+  background-color: #ca2c37;
 }
 
 .button-link:active {
   background-color: var(--special-error);
+}
+
+.block-title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum";
 }
 
 
@@ -397,25 +403,14 @@ img {
   list-style: none;
 
   gap: 20px 20px;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: repeat(3,300px);
   grid-template-rows: 123px 123px 123px;
 }
 
-.promo-item {
-  width: 300px;
-  height: 123px;
-}
-
-.promo-link {
-  width: 135px;
-  height: 38px;
-}
-
-
 
 .promo-slider {
-  width: 620px;
-  height: 266px;
+  grid-column: 1/3; 
+  grid-row: 2/3;
 }
 
 .promo-item-material {
@@ -519,6 +514,13 @@ img {
 }
 
 
+.top-products-item:hover {
+
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+
+
 .product-name {
   font-weight: bold;
   font-size: 18px;
@@ -542,7 +544,18 @@ img {
 }
 
 .new-price {
-  padding: 10px 20px 10px 20px;
+  display: flex;
+  width: 141px;
+  height: 38px;
+
+  background-image: url("../img/red-button.svg") ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.new-price span {
+  padding: 10px 44px 10px 30px;
 
   font-weight: bold;
   font-size: 17px;
@@ -551,9 +564,10 @@ img {
   color: var(--basic-white);
   text-transform: uppercase;
   font-style: normal;
-
-  background: red;
 }
+
+
+
 
 .product-foter {
   display: flex;
@@ -578,16 +592,16 @@ img {
   display: grid;
 
   gap: 20px 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4,1fr);
 }
 
 .top-manufacturers-item {
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
 }
 
 .top-manufacturers-item:hover {
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   border: 0;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
 .top-manufacturers-item:active {
@@ -619,7 +633,6 @@ img {
 
 .contacts {
   display: flex;
-
   flex-direction: column;
 }
 
@@ -866,6 +879,13 @@ img {
   margin-left: 50px;
 }
 
+.footer-wriper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 107px;
+}
+
 /* ########## страница каталоаг*/
 
 /* Хлебные крошки */
@@ -942,3 +962,53 @@ img {
 
   font: 1em sans-serif;
 }
+
+
+/* Модальные окна */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: none;
+  color: var(--basic-white);
+  background-color: var(--basic-white);
+  
+}
+
+
+/* Кнопка зыкрытие поп-апа */
+
+.modal-close {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  background-image: url('../img/icon-close.svg');
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+}
+
+
+
+
+/* Модальная карта */
+.modal-map {
+    
+    width: 943px;
+    height: 449px;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.modal-map img {
+  display: block;
+}
+
+/* Модальная форма  */
+
+
