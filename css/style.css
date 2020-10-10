@@ -581,6 +581,20 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.top-manufacturers-item {
+  border: 1px solid #EAEAEA;
+}
+
+.top-manufacturers-item:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  border: 0;
+}
+
+.top-manufacturers-item:active {
+  border: 0;
+  opacity: 0.5;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
 
 
 /* Сервисы */
