@@ -58,6 +58,15 @@
   border: none;
 }
 
+.button-link:hover {
+  background-color: #CA2C37;
+}
+
+.button-link:active {
+  background-color: var(--special-error);
+}
+
+
 .top-item-btn {
   margin-right: 14px;
   margin-left: auto;
@@ -596,9 +605,27 @@ img {
 
 .contacts {
   display: flex;
+
   flex-direction: column;
 }
 
+.about-company-item {
+  margin-bottom: 12px;
+  margin-left: 37px;
+}
+
+
+.about-company-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+
+  width: 25px;
+  height: 2px;
+
+  border-top: 1pt solid #f50057;
+}
 
 
 .contacts h2 {
@@ -656,10 +683,16 @@ img {
 }
 
 .about_company_link {
+  align-content: center;
+  align-self: flex-start;
   min-width: 220px;
   margin-top: auto;
+  padding: 11px 0 9px 40px;
 }
 
+.button-show-popup {
+  margin-top: auto;
+}
 
 /* Подвал сайта */
 
