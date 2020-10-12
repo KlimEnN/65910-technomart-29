@@ -74,12 +74,13 @@
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum";
+  margin: 0;
 }
 
 
 .top-item-btn {
-  margin-right: 14px;
-  margin-left: auto;
+  padding: 11px 24px 9px 24px;
+
 }
 
 .visually-hidden {
@@ -219,6 +220,7 @@ img {
   margin-left: 20px;
 }
 
+
 .top-menu-item span {
   font-size: 18px;
   line-height: 24px;
@@ -288,10 +290,6 @@ img {
   margin-right: 8px;
 
   cursor: pointer;
-}
-
-.icon-search:hover path {
-  fill: var(--basic-white);
 }
 
 .midl-menu {
@@ -443,12 +441,58 @@ img {
   gap: 20px 20px;
   grid-template-columns: repeat(3,300px);
   grid-template-rows: 123px 123px 123px;
+  padding-bottom: 50px;
 }
 
 
 .promo-slider {
+  position: relative;
   grid-column: 1/3;
   grid-row: 2/3;
+}
+
+.baner-title {
+  position: absolute;
+  color: var(--basic-white);
+  left: 24px;
+}
+
+.open-catalog-btn{
+  position: absolute;
+  left: 24px;
+  top: 201px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 100px;
+}
+
+.slider-btn-l {
+  left: 24px;
+}
+
+.slider-btn-r {
+  right: 24px;
+}
+
+.baner-title h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+
+}
+
+.baner-title span {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.open-catalog-btn {
+  
+  text-align: center;
+  padding: 11px 46px 9px 46px ;
+
 }
 
 .promo-item {
@@ -486,6 +530,7 @@ img {
 }
 
 .promo-item-material {
+  position: relative;
   background-color: var(--special-warning);
 }
 
@@ -494,8 +539,8 @@ img {
   position: absolute;
   width: 70px;
   height: 70px;
-  left: 481px;
-  top: 379px;
+  left: 230px;
+  top: 0px;
   background-image: url(../img/new.svg);
   background-repeat: no-repeat;
 
@@ -550,15 +595,16 @@ img {
 /* Топ товаров */
 
 .top-product {
-  margin-top: 50px;
+
 }
 
 .block-header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: 23px 14px 29px 28px;
   margin-bottom: 20px;
-
   background-color: var(--basic-gold);
 }
 
@@ -566,24 +612,21 @@ img {
 
 .button-link {
   display: flex;
-  padding: 11px 24px 9px 24px;
-
   font-size: 14px;
   line-height: 18px;
   font-family: var(--font-primary);
   text-align: center;
   color: var(--basic-white);
   text-transform: uppercase;
-
   background-color: var(--basic-red);
 }
 
-.block-header h2 {
-  margin-left: 28px;
-
+.block-title {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum";
   color: var(--basic-grey);
   text-transform: uppercase;
 }
