@@ -80,7 +80,10 @@
 
 .top-item-btn {
   padding: 11px 24px 9px 24px;
+}
 
+.top-manufacturers-btn {
+  padding: 11px 38px 9px 39px;
 }
 
 .visually-hidden {
@@ -596,7 +599,7 @@ img {
 /* Топ товаров */
 
 .top-product {
-
+  margin-bottom: 79px;
 }
 
 .block-header {
@@ -645,13 +648,20 @@ img {
   align-items: center;
   min-width: 220px;
   min-height: 318px;
-
+  padding: 0 0 21px 0;
   border: 1px solid #eaeaea;
 }
 
 
 .top-products-item:hover {
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.catalog-item-image {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -691,7 +701,6 @@ img {
 
 .new-price span {
   padding: 10px 44px 10px 30px;
-
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -707,10 +716,10 @@ img {
 .product-foter {
   display: flex;
   flex-direction: column;
+  justify-self: start;
   align-items: center;
   min-height: 119px;
   margin-top: auto;
-  margin-bottom: 21px;
 }
 
 .price-off {
@@ -720,7 +729,7 @@ img {
 /* Топ производители */
 
 .top-manufacturers {
-  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 .top-manufacturers-list {
@@ -728,9 +737,13 @@ img {
 
   gap: 20px 20px;
   grid-template-columns: repeat(4,1fr);
+
+
 }
 
 .top-manufacturers-item {
+  width: 220px;
+  height: 145px;
   border: 1px solid #eaeaea;
 }
 
@@ -746,8 +759,22 @@ img {
 }
 
 /* Сервисы */
+.servises {
+  padding: 64px 0 99px 0;
+  margin-bottom: 70px;
+  max-width: 100%;
+  background-color: var(--basic-background);
+  max-height: 522px;
+}
+
+
 
 /* О компании*/
+
+.about-company {
+margin-bottom: 70px;
+}
+
 .columns {
   display: grid;
   min-height: 356px;
@@ -755,10 +782,6 @@ img {
   grid-template-columns: 1fr 300px;
 }
 
-.about-company {
-  margin-top: 70px ;
-  margin-bottom: 70px ;
-}
 
 .about {
   display: flex;
@@ -768,9 +791,11 @@ img {
 .contacts {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .about-company-item {
+  position: relative;
   margin-bottom: 12px;
   margin-left: 37px;
 }
@@ -779,13 +804,12 @@ img {
 .about-company-item::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: -30px;
-
+  top: 50%;
+  left: -35px;
   width: 25px;
   height: 2px;
 
-  border-top: 1pt solid #f50057;
+  border-top: 2pt solid #f50057;
 }
 
 
@@ -809,7 +833,9 @@ img {
   font-style: normal;
 }
 
-
+.contacts img {
+  margin-bottom: 25px;
+}
 .about h2 {
   font-weight: normal;
   font-size: 30px;
@@ -844,6 +870,7 @@ img {
 }
 
 .about_company_link {
+
   align-content: center;
   align-self: flex-start;
   min-width: 220px;
@@ -852,7 +879,10 @@ img {
 }
 
 .button-show-popup {
-  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  padding: 11px 60px 9px 62px;
+
 }
 
 /* Подвал сайта */
