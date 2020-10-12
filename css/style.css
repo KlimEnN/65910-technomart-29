@@ -477,6 +477,7 @@ img {
 }
 
 .baner-title h2 {
+
   text-transform: uppercase;
   font-size: 36px;
   line-height: 36px;
@@ -489,7 +490,7 @@ img {
 }
 
 .open-catalog-btn {
-  
+
   text-align: center;
   padding: 11px 46px 9px 46px ;
 
@@ -735,15 +736,14 @@ img {
 
 .top-manufacturers-item:hover {
   border: 0;
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .top-manufacturers-item:active {
   border: 0;
   opacity: 0.5;
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
-
 
 /* Сервисы */
 
