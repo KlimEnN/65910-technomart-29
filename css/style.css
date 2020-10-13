@@ -182,6 +182,7 @@ img {
   height: 15px;
   margin-right: 8px;
   margin-left: 20px;
+  fill: darkgrey;
 }
 
 .card {
@@ -216,6 +217,17 @@ img {
   height: 16px;
   margin-right: 9px;
   margin-left: 20px;
+  fill: darkgrey;
+}
+
+.icon-bookmark:hover,
+.icon-cart:hover {
+  fill: var(--basic-white);
+}
+
+.icon-bookmark:active,
+.icon-cart:active {
+  fill: var(--basic-white);
 }
 
 
@@ -250,26 +262,24 @@ img {
 .search {
   display: flex;
   align-items: center;
-  /* margin-right: 59px; */
 
 }
 
-.search-form {
-  position: relative;
+/* .search-form {
   width: 271px;
-  padding-left: 17px;
-}
 
-.search-form:hover {
+} */
+
+.search:hover{
   background-color: var(--basic-white);
 }
 
 
 .search-input {
-  min-height: 43px;
+  padding: 12px;
   background-color: var(--basic-grey);
   border: 0;
-  margin-left: 23px;
+
 }
 
 
@@ -285,16 +295,25 @@ img {
   font-family: "Cuprum";
   color: var(--basic-white);
   font-style: normal;
+}
+
+.search-btn {
 
 }
 
 .icon-search {
-  position: absolute;
+  position: ;
   width: 17px;
   height: 17px;
-  left: 17px;
-  top: 12px;
+  /* right: 32px;
+  top: 5px; */
   cursor: pointer;
+  fill: darkgrey;
+}
+
+.icon-search:hover {
+  display: block;
+  fill: #ba2732;
 }
 
 .midl-menu {
@@ -340,7 +359,7 @@ img {
   height: 19px;
   left: 36px;
   top: 13px;
-
+  fill: darkgrey;
 }
 
 .phone {
@@ -397,8 +416,16 @@ img {
   width: 20px;
   height: 17px;
   margin-right: 6px;
+  fill: #C5C5C5;
 }
 
+.icon-login:hover {
+    fill: var(--basic-black);
+}
+
+.icon-login:active {
+  fill: #C5C5C5;
+}
 
 
 .midl-menu-list {
@@ -929,8 +956,7 @@ margin-bottom: 70px;
 
 
 
-
-.adres-footer {
+.adress-header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
