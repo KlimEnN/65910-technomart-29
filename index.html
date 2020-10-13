@@ -27,12 +27,24 @@
                                 </a>
 
                             <ul class="top-menu-list">
-                            <li class="top-menu-item">
+                            <li class="top-menu-item search">
 
-                                <form class="search" action="/find.cgi" method=post enctype="multipart/form-data">
+                                <!-- <form class="search-form" action="/find.cgi" method=post enctype="multipart/form-data">
                                     <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
                                     <input class="search-input" type="text" placeholder="Поиск:">
+                                </form> -->
+
+
+                                <form class="search-form">
+                                  <label for="search-field"></label>
+                                  <input id="search-field" type="search" class="search-input" placeholder="Поиск:" />
+
+                                    <svg class="icon-search">
+                                      <use xlink:href="#icon-search"></use>
+                                    </svg>
+                                  </button>
                                 </form>
+
 
                             </li>
                             <li class="top-menu-item">
@@ -41,7 +53,7 @@
                                 <span>Закладки: 0</span>
                               </a>
                             </li>
-                            <li class="top-menu-item ">
+                            <li class="top-menu-item">
                               <a class="card" href="#" >
                                 <svg class="icon-cart"><use xlink:href="#icon-cart"></use></svg>
                                 <span>Корзина: 0</span>
@@ -64,30 +76,27 @@
                         </div>
                         <ul class="midl-menu-list">
                                 <li class="midl-menu-item">
-
                                     <a class="contacts-phone-header" href="tel:+78125550555">
-                                        <span>
                                         <svg class="icon-phone"><use xlink:href="#icon-phone"></use></svg>
                                          <span class="phone">+7 (812) 555-05-55</span>
-                                        </span>
                                     </a>
                                 </li>
-                                <li>
-                                    <p class="adres-header">
+                                <li class="adres-header">
+                                    <span >
                                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                                    </p>
+                                    </span>
                                 </li>
                          </ul>
                         <ul class="check-out">
-                                <li class="check-out-item">
-                                    <a href="#" class="check-out-link">
+                                <li class="check-out-item log-in-item">
+                                    <a href="#" class="check-out-link log-in">
                                         <svg class="icon-login"><use xlink:href="#icon-login"></use></svg>
                                         Войти
                                     </a>
 
                                 </li>
                                 <li class="check-out-item">
-                                    <a href="#" class="check-out-link" >Регистрация
+                                    <a href="#" class="check-out-link sing-in" >Регистрация
 
                                     </a>
                                 </li>
@@ -386,12 +395,12 @@
                         Мы можем доставить ваш товар в самые отдаленные точки России! <br>
                         Техномарт работает со многими транспортными компаниями:
                     </p>
-                    <ul class="about_company_list">
+                    <ul class="about-company_list">
                         <li class="about-company-item">Деловые линии</li>
                         <li class="about-company-item">Автотрейдинг</li>
                         <li class="about-company-item">ЖелДорЭкспедиция</li>
                     </ul>
-                    <a class="button button-link about_company_link" href="#">Подробнее о компании</a>
+                    <a class="button button-link about-company-link" href="#">Подробнее о компании</a>
                 </div>
 
                 <div class="contacts">
