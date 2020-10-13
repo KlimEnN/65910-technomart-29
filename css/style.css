@@ -56,9 +56,12 @@
 
   font: inherit;
   color: inherit;
+  background: none;
+  border: none;
+  outline: none;
 
   background-color: transparent;
-  border: none;
+
 }
 
 .button-link:hover {
@@ -210,9 +213,19 @@ img {
 .card:active {
   background-color: #161d29;
   opacity: 50%;
-
   user-select: none;
 }
+
+.bookmark:hover,
+.card:hover svg{
+  fill: var(--basic-white);
+}
+
+.bookmark:hover
+ svg{
+  fill: var(--basic-white);
+}
+
 
 .icon-bookmark {
   width: 14px;
@@ -223,10 +236,7 @@ img {
   fill: darkgrey;
 }
 
-.icon-bookmark:hover,
-.icon-cart:hover {
-  fill: var(--basic-white);
-}
+
 
 .icon-bookmark:active,
 .icon-cart:active {
@@ -262,24 +272,38 @@ img {
   opacity: 50%;
 }
 
-.search {
+
+
+.search-form {
   display: flex;
-  align-items: center;
+ flex-direction: row-reverse;
+ justify-content: flex-end;
+ width: 271px;
 }
 
-/* .search-form {
-  width: 271px;
-
-} */
+.search-form:hover svg {
+  fill: var(--basic-red);
+}
 
 .search:hover {
   background-color: var(--basic-white);
 }
 
+/* .search:hover svg{
+  fill: var(--special-error);
+} */
+
 .search-btn {
+  padding-left: 12px;
   background: none;
   border: none;
   outline: none;
+
+}
+
+
+.search-btn:hover .search {
+  background-color: var(--basic-white);
 }
 
 
@@ -322,11 +346,6 @@ img {
   fill: darkgrey;
 }
 
-.icon-search:hover {
-  display: block;
-
-  fill: #ba2732;
-}
 
 .midl-menu {
   display: grid;
@@ -414,6 +433,10 @@ img {
   padding: 12px 27px 12px 19px;
 }
 
+.log-in:hover svg{
+  fill: #3D546F;
+}
+
 .log-in-item {
   margin-left: 40px;
 }
@@ -424,6 +447,11 @@ img {
 
 .check-out-link:active {
   color: var(--basic-greylight);
+}
+
+.check-out-link:active svg{
+  color: var(--basic-greylight);
+  fill: #C5C5C5;
 }
 
 .icon-login {
@@ -600,14 +628,14 @@ img {
 
 .promo-item-material {
   position: relative;
-
+  overflow: hidden;
   background-color: var(--special-warning);
 }
 
 .promo-item-material::after {
   content: "New";
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 230px;
 
   display: flex;
@@ -624,6 +652,7 @@ img {
 
   background-color: red;
   transform: rotate(45deg);
+
 }
 
 .icon-material {
