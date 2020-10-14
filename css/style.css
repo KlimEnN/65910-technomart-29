@@ -563,7 +563,6 @@ img {
 }
 
 .slider-btn-l {
-
   left: 24px;
 
   width: 22px;
@@ -646,14 +645,15 @@ img {
 
 .promo-link:hover {
   color: var(--basic-white);
+
   background-color: rgba(197, 197, 197, 0.3);
 }
 
 
 .promo-link:active {
   color: var(--basic-white);
-  background-color: rgba(169, 169, 169, 0.3);
 
+  background-color: rgba(169, 169, 169, 0.3);
 }
 
 .col1 {
@@ -790,6 +790,7 @@ img {
   padding-bottom: 21px;
 
   border: 1px solid #eaeaea;
+
   transition: 20ms;
 }
 
@@ -797,12 +798,10 @@ img {
 
 
 .catalog-item-image {
-
   display: flex;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-
 }
 
 
@@ -870,14 +869,12 @@ img {
 }
 
 
-.top-products-item:hover .catalog-item-image{
+.top-products-item:hover .catalog-item-image {
   display: none;
-
 }
 
 .top-products-item:hover .product-hever {
   display: inline-flex;
-
 }
 
 .top-products-item:hover {
@@ -887,49 +884,54 @@ img {
 /* Продукт при наведении */
 .product-hever {
   display: flex;
+  display: none;
   flex-direction: column;
   margin-top: 34px;
   margin-bottom: auto;
- display: none;
 }
 
 .buy-btn {
   position: relative;
-  padding: 10px 25px 10px 25px;
-  color: var(--basic-white);
-  background: #63A63E;
+
   margin-bottom: 10px;
-  box-shadow: inset 0px -3px 0px #367315;
+  padding: 10px 25px 10px 25px;
+
+  color: var(--basic-white);
+
+  background: #63a63e;
+  box-shadow: inset 0 -3px 0 #367315;
 }
 
 .buy-btn:hover {
   background-color: var(--special-success);
-
 }
 
 .buy-btn:active {
   background-color: #518534;
-
 }
 
 .buy-btn::before {
-  position: absolute;
   content: "";
+  position: absolute;
+  left: 30px;
+
   width: 15px;
   height: 15px;
-  left: 30px;
-  background-image: url('../img/icon-cart.png');
+
+  background-image: url("../img/icon-cart.png");
   background-repeat: no-repeat;
 }
 
 .bookmark-btn {
   padding: 10px 35px;
-  border: 3px solid #63A63E;
+
   text-transform: uppercase;
+
+  border: 3px solid #63a63e;
 }
 
 .bookmark-btn:hover {
-  border: 3px solid #32425C;
+  border: 3px solid #32425c;
 }
 
 .bookmark-btn:active {
@@ -945,6 +947,7 @@ img {
 
 .top-manufacturers-list {
   display: grid;
+
   gap: 20px;
   grid-template-columns: repeat(4,1fr);
 }
@@ -953,12 +956,12 @@ img {
   display: block;
   width: 220px;
   height: 145px;
-
 }
 
 .top-manufacturers-item {
-outline: 1px solid #eaeaea;
- transition: 10ms;
+  outline: 1px solid #eaeaea;
+
+  transition: 10ms;
 }
 
 .top-manufacturers-item:hover {
@@ -982,7 +985,92 @@ outline: 1px solid #eaeaea;
   background-color: var(--basic-background);
 }
 
+.servises-heder {
+  position: relative;
 
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans";
+  font-style: normal;
+}
+
+.servises-heder p {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.servises-footer {
+  position: relative;
+
+  display: flex;
+}
+.servises-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.servises-button::before {
+  content: "";
+  position: absolute;
+  left: 240px;
+  z-index: 1;
+
+  width: 10px;
+  height: 279px;
+
+  background: rgba(0, 0, 0, 0.0001);
+  border: 50%;
+}
+
+.servises-btn {
+  display: flex;
+  width: 240px;
+  padding: 14px 157px 16px 22px;
+
+  color: var(--basic-white);
+
+  background-color: #32425c;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+  font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 30px;
+}
+
+.servises-btn:hover {
+  background: #293449;
+}
+
+.servises-btn:active {
+  background: var(--basic-white);
+  color: #32425C;
+}
+
+.content {
+  margin-left: 80px;
+
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans";
+  font-style: normal;
+}
+
+.title-servises {
+
+  margin-bottom: 30px;
+}
+
+.servises-footer img {
+  position: absolute;
+  top: 4;
+  right: 0;
+}
 
 /* О компании*/
 
