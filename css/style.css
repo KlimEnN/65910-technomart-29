@@ -744,7 +744,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  padding: 29px 14px 30px 28px;
+  padding: 25px 19px 26px 28px;
 
   background-color: var(--basic-gold);
 }
@@ -945,25 +945,29 @@ img {
 
 .top-manufacturers-list {
   display: grid;
-
   gap: 20px;
   grid-template-columns: repeat(4,1fr);
 }
 
-.top-manufacturers-item {
+.top-manufacturers-link {
+  display: block;
   width: 220px;
   height: 145px;
 
-  border: 1px solid #eaeaea;
+}
+
+.top-manufacturers-item {
+outline: 1px solid #eaeaea;
+ transition: 10ms;
 }
 
 .top-manufacturers-item:hover {
-  border: 0;
+  outline: 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .top-manufacturers-item:active {
-  border: 0;
+  outline: 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   opacity: 0.5;
 }
