@@ -1032,24 +1032,27 @@ img {
   width: 240px;
   padding: 14px 157px 16px 22px;
 
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
   color: var(--basic-white);
+  font-style: normal;
 
   background-color: #32425c;
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
-  font-style: normal;
-font-weight: bold;
-font-size: 21px;
-line-height: 30px;
+}
+
+.active-btn {
+  color: #32425c;
+
+  background: var(--basic-white);
 }
 
 .servises-btn:hover {
   background: #293449;
 }
 
-.servises-btn:active {
-  background: var(--basic-white);
-  color: #32425C;
-}
+
 
 .content {
   margin-left: 80px;
@@ -1062,7 +1065,6 @@ line-height: 30px;
 }
 
 .title-servises {
-
   margin-bottom: 30px;
 }
 
@@ -1207,9 +1209,11 @@ line-height: 30px;
   background-color: #32425c;
 }
 
-.top-footer {
+.footer-left-side {
   display: flex;
-  min-height: 193px;
+  justify-content: space-between;
+  align-items: center;;
+  margin-bottom: 22px;
 }
 
 
@@ -1234,6 +1238,8 @@ line-height: 30px;
 
 
 .static-pages-link {
+  padding-left: 60px;
+
   color: var(--basic-white);
 }
 
@@ -1259,20 +1265,21 @@ line-height: 30px;
 
 .footer-right-side {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+
+.nav-static-pages {
   margin-top: 37px;
-  margin-left: auto;
 }
 
 
 .nav-static-ages-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.nav-static-pages-item {
-  margin-left: 50px;
-}
+
 
 .nav-catalog-footer-list {
   display: flex;
@@ -1281,9 +1288,18 @@ line-height: 30px;
 }
 
 .nav-catalog-footer-item {
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
+.nav-catalog-footer-item:first-child {
+  margin-left: 0;
+}
+
+.contacts-phone-footer {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
 
 .copyright {
   background-color: #293449;
@@ -1296,24 +1312,25 @@ line-height: 30px;
 }
 
 
-.icon-social {
-  display: block;
+.social-item {
   width: 44px;
   height: 44px;
 
   cursor: pointer;
-
-  fill: red;
 }
 
-.icon-social:hover {
+.social-link {
   display: block;
+  width: 42px;
+  height: 42px;
 
-  fill: #ba2732;
+  background-color: #212a3a;
+  border-radius: 50%;
+  /* background: linear-gradient(0deg, #212A3A, #212A3A); */
 }
 
-.icon-social:active {
-  fill: #ba2732;
+.social-link:hover {
+  background-color: var(--basic-red);
 }
 
 .feedback {
