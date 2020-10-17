@@ -103,7 +103,6 @@
 
 
 a {
-
   text-decoration: none;
 
   cursor: pointer;
@@ -881,6 +880,10 @@ img {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.p-name {
+  text-align: center;
+}
+
 /* Продукт при наведении */
 .product-buttons {
   position: absolute;
@@ -1545,8 +1548,8 @@ img {
 
   background: #ee3643;
   background-color: var(--basic-red);
-  border-radius: 2px;
   border: 1px solid #ee3643;
+  border-radius: 2px;
 }
 
 .nav-pages-item:hover {
