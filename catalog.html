@@ -12,13 +12,13 @@
     <!-- Hужно спрятать при помощи стилей -->
     <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <!-- Шапка сайта -->
-    <header class="main-header">
+    <header class="main-header main-header-inner">
 
             <nav class="top-menu">
                 <div class="container">
                     <div class="top-header-wrapper">
 
-                            <a class="logo" >
+                            <a class="logo" href="index.html" >
                                 <img class="logo-top" src="img/logo-technomart.svg" alt="" width="108" height="18">
                             </a>
 
@@ -83,15 +83,16 @@
 
                             <li class="check-out-item">
 
-                                <a href="#" class="check-out-link sing-in accaunt-btn" >
-                                  <svg class="icon-login"><use xlink:href="#Shape"></use></svg>
+                                <a href="#" class="check-out-link sing-in accaunt-btn check-out-link-inner " >
+                                  <svg class="head"><use xlink:href="#head"></use></svg>
                                   Равшан Джамшутович
                                   <svg class="icon-login"><use xlink:href="#icon-login"></use></svg>
                                 </a>
                             </li>
-                            <div>
-                             <a>Мои заказы</a>
-                             <a>Личный кабинет</a>
+                            <div class="hot-link" >
+                             <a class="my-order">Мои заказы</a>
+                             <svg class="icon-social"><use xlink:href="#dot"></use></svg>
+                             <a class="my-account">Личный кабинет</a>
                             </div>
                     </ul>
                 </nav>
@@ -156,7 +157,7 @@
         </div>
 
         <section class="catalog">
-          <div class="container">
+
             <div class="catalog-wriper-sorting">
               <div class="filter-color">
                 <h2 class="filter-title">Фильтры:</h2>
@@ -367,7 +368,7 @@
 
 
             </div>
-          </div>
+
         </section>
 
 
@@ -377,10 +378,10 @@
             <h3 class="visually-hidden">Постраничная навигация</h1>
             <ul class="nav-pages-list">
                 <li class="nav-pages-item nav-pages-item-current">
-                  <a >1</a>
+                  <a>1</a>
                 </li>
                 <li class="nav-pages-item">
-                  <a>2</a>
+                  <a href="#">2</a>
                 </li>
                 <li class="nav-pages-item">
                   <a href="#">3</a>
@@ -388,18 +389,22 @@
                 <li class="nav-pages-item">
                   <a href="#">4</a>
                 </li>
+                <li class="nav-pages-item">
+                  <a href="">Следующая</a>
+                </li>
 
             </ul>
-            <button class="button nav-pages-btn" type="button"> Следующая</button>
+
         </section>
           <!-- Постраничная навигация /-->
 
 
+    </main>
 
-          <!-- /SEO текст -->
-          <section class="seo-text">
+    <!-- /SEO текст -->
+    <section class="seo-text">
               <div class="container">
-                <div class="seo">
+                <div class="seo"></div>
                   <h2 class="block-title">Пара слов о перфораторах</h2>
                   <p>
                     Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
@@ -408,10 +413,10 @@
                   </p>
                 </div>
               </div>
-          </section>
-          <!-- SEO текст /-->
+    </section>
+     <!-- SEO текст /-->
 
-    </main>
+
     <!-- Основное содержимое старницы  /-->
 
 
@@ -574,6 +579,13 @@
     </symbol>
     <symbol viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="vk">
       <path d="M15.54 11.728c.92-.29 2.1 1.913 3.354 2.755.942.639 1.663.501 1.663.501l3.345-.047s1.747-.105.921-1.457c-.068-.112-.484-1.002-2.489-2.833-2.096-1.915-1.812-1.605.712-4.916 1.538-2.019 2.153-3.251 1.96-3.776-.185-.506-1.314-.374-1.314-.374l-3.768.025c-.367 0-.678.111-.82.483-.003.003-.598 1.562-1.391 2.886-1.677 2.802-2.346 2.952-2.623 2.776-.637-.406-.476-1.628-.476-2.497 0-2.716.416-3.849-.815-4.141-.411-.098-.711-.161-1.76-.17-1.34-.02-2.479 0-3.124.308-.428.209-.757.667-.557.693.25.033.811.15 1.112.55.386.517.374 1.677.374 1.677s.22 3.198-.52 3.594c-.508.272-1.203-.283-2.699-2.827-.763-1.301-1.34-2.74-1.34-2.74s-.112-.267-.314-.413a1.583 1.583 0 0 0-.578-.229L.817 1.58s-.538.015-.735.245c-.175.205-.015.627-.015.627s2.802 6.45 5.974 9.7c2.908 2.983 6.213 2.785 6.213 2.785h1.497s.452-.05.683-.292c.216-.225.206-.648.206-.648s-.03-1.977.9-2.268z" fill="#fff"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5" id="dot">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M2 .494a1.986 1.986 0 110 3.973A1.986 1.986 0 012 .494z" fill="#fff"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M2 .494a1.986 1.986 0 110 3.973A1.986 1.986 0 012 .494z" fill="#32425C"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18" id="head">
+      <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z" fill="#C5C5C5"></path>
     </symbol>
   </svg>
 
