@@ -1320,6 +1320,7 @@ img {
 
 
 .social-item {
+
   width: 44px;
   height: 44px;
 
@@ -1327,13 +1328,23 @@ img {
 }
 
 .social-link {
-  display: block;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 42px;
   height: 42px;
 
   background-color: #212a3a;
   border-radius: 50%;
-  /* background: linear-gradient(0deg, #212A3A, #212A3A); */
+
+}
+
+.social-item svg {
+  width: 21px;
+  height: 21px;
+  fill: var(--basic-sel);
 }
 
 .social-link:hover {
