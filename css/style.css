@@ -954,6 +954,7 @@ img {
 }
 .buy-btn svg {
   margin: 0;
+  opacity: 70%;
 }
 
 .buy-btn {
@@ -1461,18 +1462,26 @@ img {
   align-items: center;
   margin-top: 20px;
 
-  font-size: 13px;
-  line-height: 18px;
   font-family: "PT Sans";
   text-transform: uppercase;
 }
 
 .breadcrumb-list li {
-  margin-right: 18px;
+  position: relative;
+  margin-right: 43px;
 }
 
-.breadcrumb-item svg {
-  fill: #000000;
+.breadcrumb-item::before {
+  position: absolute;
+  content: url('../img/bc.png');
+  left: -26px;
+}
+
+.breadcrumb-link {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
 }
 
 
