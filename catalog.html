@@ -162,16 +162,16 @@
               <div class="filter-color">
                 <h2 class="filter-title">Фильтры:</h2>
               </div>
-              <section class="sorting">
+              <section class="sorting sorting-block">
                     <p class="filter-heading">Сортировка:</p>
                     <div class="sorting-list">
-                        <select>
-                        <option>По цене</option>
-                        <option>По типу</option>
-                        <option>По функционалу</option>
-                        </select>
-                        <button type="button">Вверх</button>
-                        <button type="button">Вниз</button>
+
+                        <div class="sorting-item ">По цене</div>
+                        <div class="sorting-item">По типу</div>
+                        <div class="sorting-item">По функционалу</div>
+
+                        <button class="" type="button">1</button>
+                        <button type="button">2</button>
                     </div>
               </section>
 
@@ -180,6 +180,29 @@
             <div class="catalog-wriper">
 
               <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class="filter-item">
+                  <legend>Цена:</legend>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar" style="
+                          width: 30%;
+                          margin-left: 20%
+                        "></div>
+                      </div>
+                      <div class="toggle toggle-min" tabindex="0" style="
+                        left: 20%
+                      "></div>
+                      <div class="toggle toggle-max" tabindex="0" style="
+                        left: 50%
+                      "></div>
+                    </div>
+                    <div class="price-controls">
+                      <input class="min-price input" type="number" name="min-price" value="0">
+                      <input class="max-price input" type="number" name="max-price" value="30000">
+                    </div>
+                  </div>
+              </fieldset>
 
                 <fieldset>
                     <legend>ПРОИЗВОДИТЕЛИ:</legend>
