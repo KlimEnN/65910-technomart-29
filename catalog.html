@@ -166,12 +166,11 @@
                     <p class="filter-heading">Сортировка:</p>
                     <div class="sorting-list">
 
-                        <div class="sorting-item ">По цене</div>
+                        <div class="sorting-item sorting-item-active">По цене</div>
                         <div class="sorting-item">По типу</div>
                         <div class="sorting-item">По функционалу</div>
 
-                        <button class="" type="button">1</button>
-                        <button type="button">2</button>
+
                     </div>
               </section>
 
@@ -206,26 +205,26 @@
 
                 <fieldset>
                     <legend>ПРОИЗВОДИТЕЛИ:</legend>
-                    <ul>
+                    <ul class="filter-option-list">
                         <li class="filter-option checked">
-                            <input  type="checkbox" value="BOSCH" checked id="BOSCH">
+                            <input class="visually-hidden filter-input-checkbox" type="checkbox" value="BOSCH" checked id="BOSCH">
                             <label class="filter-item-style" for="BOSCH">BOSCH</label>
                         </li>
                         <li class="filter-option">
-                            <input  type="checkbox" value="ИНТЕРСКОЛ"  id="interscol">
+                            <input class="visually-hidden filter-input-checkbox"  type="checkbox" value="ИНТЕРСКОЛ"  id="interscol">
                             <label class="filter-item-style" for="interscol">ИНТЕРСКОЛ</label>
                         </li>
                         <li class="filter-option">
-                            <input  type="checkbox" value="Makita" checked id="Makita">
+                            <input class="visually-hidden filter-input-checkbox"  type="checkbox" value="Makita" checked id="Makita">
                             <label class="filter-item-style" for="Makita">Makita</label>
                         </li>
                         <li class="filter-option">
-                            <input  type="checkbox" value="Dewalt"  id="Dewalt">
+                            <input class="visually-hidden filter-input-checkbox"  type="checkbox" value="Dewalt"  id="Dewalt">
                             <label class="filter-item-style" for="Dewalt">Dewalt</label>
                         </li>
                         <li class="filter-option">
-                            <input  type="checkbox" value="Hitachi"  id="Hitachi">
-                            <label class="filter-item-style" for="Dewalt">Hitachi</label>
+                            <input class="visually-hidden filter-input-checkbox"  type="checkbox" value="Hitachi"  id="Hitachi">
+                            <label class="filter-item-style " for="Hitachi">Hitachi</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -233,11 +232,11 @@
                     <legend>ПИТАНИЕ:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input  type="radio" id="choice1" name="elec" value="Аккумуляторные" checked>
+                            <input class="visually-hidden filter-input-radio"  type="radio" id="choice1" name="elec" value="Аккумуляторные" checked>
                             <label class="filter-item-style" for="choice1">Аккумуляторные</label>
                         </li>
                         <li class="filter-option">
-                            <input  type="radio" id="choice2" name="elec" value="Сетевые">
+                            <input class="visually-hidden filter-input-radio"  type="radio" id="choice2" name="elec" value="Сетевые">
                             <label class="filter-item-style" for="choice2">Сетевые</label>
                         </li>
                     </ul>
@@ -609,6 +608,12 @@
     </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18" id="head">
       <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z" fill="#C5C5C5"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 10" id="sort-btn-l">
+      <path d="M5.5 0L11 10H0" fill="#EE3643"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 10" id="sort-btn-r">
+      <path d="M5.5 10L0 0h11" fill="#C5C5C5"></path>
     </symbol>
   </svg>
 

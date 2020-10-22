@@ -1460,6 +1460,7 @@ img {
 .breadcrumb-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 20px;
 
   font-family: "PT Sans";
@@ -1549,6 +1550,7 @@ img {
 .sorting-list {
   display: flex;
   align-items: center;
+  padding-right: 14px;
 }
 
 /* .sorting-block{
@@ -1567,18 +1569,30 @@ img {
 
 .sorting-item {
   margin-left: 70px;
-
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans";
   text-transform: uppercase;
-  text-decoration: underline;
-
+ border-bottom: 1px dotted var(--basic-red);
   cursor: pointer;
-  opacity: 0.3;
-
   mix-blend-mode: normal;
+opacity: 0.3;
 }
+
+.sorting-item-active {
+  opacity: 1;
+  color: var(--basic-red);
+  border: 0;
+}
+
+.sorting-item:active {
+  opacity: 1;
+  color: var(--basic-red);
+  border: 0;
+}
+
+
+
 
 /* Каталог */
 
@@ -1638,6 +1652,7 @@ legend {
   line-height: 30px;
   font-family: "PT Sans";
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 fieldset {
@@ -1656,7 +1671,7 @@ fieldset::after {
   width: 220px;
   margin-top: 26px;
 
-  border: 1px solid red;
+  border: 1px solid var(--basic-greylight);
 }
 
 .filter-button {
@@ -1671,8 +1686,60 @@ fieldset::after {
   border: 1px solid #e5e5e5;
 }
 
+.filter-option {
+  display: flex;
+  margin-left: 35px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filter-input-checkbox + label::before {
+  content: url('../img/checkbox-off.svg');
+  position: absolute;
+  left: -32px;
+  top: -3px;
 
 
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: url('../img/checkbox-on.svg');
+  position: absolute;
+  left: -32px;
+  top: -3px;
+}
+
+.filter-input-radio + label::before {
+  content: url('../img/radio-off.svg');
+  position: absolute;
+  left: -32px;
+  top: -4px;
+  width: 25px;
+  height: 25px;
+
+}
+
+.filter-input-radio:checked + label::before {
+  content: url('../img/radio-on.svg');
+  position: absolute;
+  left: -32px;
+  top: -4px;
+}
+
+.filter-item-style {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
 
 
 /* SEO text */
