@@ -1633,14 +1633,58 @@ opacity: 0.3;
 }
 
 /* Фильтр */
+.ange-filter {
+  position: relative;
+}
+
 
 .range-controls {
+  position: relative;
   width: 220px;
   height: 80px;
   margin-bottom: 10px;
-
   background-color: var(--basic-sel) ;
 }
+
+.range-controls .scale {
+  position: absolute;
+  top: 38px;
+  left: 20px;
+  width: 180px;
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle-min {
+  position: absolute;
+  left: 10px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
 
 
 .price-controls {
@@ -1674,22 +1718,18 @@ legend {
 
 fieldset {
   position: relative;
-
-  margin-bottom: 45px;
   padding: 0;
-
   border: 0;
+  padding-bottom: 25px;
+  margin-top: 16px;
+  border-bottom: 1px solid var(--basic-oldprice);
 }
 
-fieldset::after {
-  content: "";
-  position: absolute;
-
-  width: 220px;
-  margin-top: 26px;
-
-  border: 1px solid var(--basic-greylight);
+.radio-set {
+  border-bottom: 1px solid transparent;
 }
+
+
 
 .filter-button {
   width: 220px;
@@ -1705,7 +1745,12 @@ fieldset::after {
 
 .filter-option {
   display: flex;
+  margin-bottom: 16px;
   margin-left: 35px;
+}
+
+.filter-option:last-child {
+  margin-bottom: 0px;
 }
 
 .filter-option label {
@@ -1713,7 +1758,6 @@ fieldset::after {
   display: block;
   cursor: pointer;
   user-select: none;
-  margin-bottom: 20px;
   align-items: center;
 }
 
