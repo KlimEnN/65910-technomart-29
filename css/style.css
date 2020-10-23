@@ -1461,7 +1461,6 @@ img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 20px;
 
   font-family: "PT Sans";
   text-transform: uppercase;
@@ -1591,8 +1590,29 @@ opacity: 0.3;
   border: 0;
 }
 
+.sorting-btn {
+  display: flex;
 
+  margin-left: 45px;
+}
 
+.sorting-btn-up {
+  width: 0;
+  height: 0;
+  margin-left: 21px;
+  border-style: solid;
+  border-width: 11px 7px 0 7px;
+  border-color: var(--basic-greylight) transparent transparent transparent;
+}
+
+.sorting-btn-down {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 7px 0 7px;
+  border-color: var(--basic-red) transparent transparent transparent;
+  transform: rotate(180deg);
+}
 
 /* Каталог */
 
