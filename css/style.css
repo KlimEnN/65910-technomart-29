@@ -820,15 +820,15 @@ img {
 }
 
 .top-products-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  gap: 20px;
 }
 
 .top-products-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 220px;
   min-height: 318px;
   padding-bottom: 21px;
 
@@ -951,7 +951,7 @@ img {
 
 .buy-btn svg {
   margin: 0;
-  opacity: 70%;
+  opacity: 0.7;
 }
 
 .buy-btn {
@@ -1523,7 +1523,7 @@ img {
 .filter-color {
   display: flex;
   align-items: center;
-  padding: 14px 151px 14px 18px;
+  padding-left: 14px;
 
   background-color: var(--basic-sel);
 }
@@ -1569,10 +1569,10 @@ img {
   line-height: 18px;
   font-family: "PT Sans";
   text-transform: uppercase;
- border-bottom: 1px dotted var(--basic-red);
+  border-bottom: 1px dotted var(--basic-red);
   cursor: pointer;
   mix-blend-mode: normal;
-opacity: 0.3;
+  opacity: 0.3;
 }
 
 .sorting-item-active {
@@ -1615,21 +1615,16 @@ opacity: 0.3;
 
 .catalog {
   margin-bottom: 50px;
-}
-
-.catalog-wriper {
   display: grid;
-
-  gap: 20px 20px;
-  grid-template-columns: 220px auto;
+  gap: 20px;
+  grid-template-columns: 220px 1fr;
 }
 
 
 .products-list {
   display: grid;
-
   gap: 20px 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 220px 220px 220px;
 }
 
 /* Фильтр */
@@ -1661,17 +1656,21 @@ opacity: 0.3;
   background: #00ca74;
 }
 
-.range-controls .toggle-min {
+.toggle {
+
+}
+
+.toggle-min {
   position: absolute;
   left: 10px;
 }
 
-.range-controls .toggle-max {
+ .toggle-max {
   left: 160px;
 }
 
 
-.range-controls .toggle {
+.toggle {
   position: absolute;
   top: 31px;
   left: 0;
@@ -1685,7 +1684,17 @@ opacity: 0.3;
   cursor: pointer;
 }
 
+.toggle::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  left: -2px;
+  bottom: -2px;
+  background-color: #ABABAB;
 
+}
 
 .price-controls {
   display: flex;
