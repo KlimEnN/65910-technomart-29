@@ -409,7 +409,9 @@ img {
   line-height: 30px;
 }
 
-
+.check-out-index {
+  margin-bottom: 20px;
+}
 
 .check-out {
   display: flex;
@@ -1935,13 +1937,9 @@ fieldset {
   right: 0;
   bottom: 0;
   left: 0;
-
-  display: none;
   margin: auto;
 
-  color: var(--basic-white);
-
-  background-color: var(--basic-white);
+  z-index: 10;
 }
 
 
@@ -1951,29 +1949,34 @@ fieldset {
   position: absolute;
   top: 17px;
   right: 10px;
-
   width: 22px;
   height: 22px;
 
   background-image: url("../img/icon-close.svg");
+  background-position: 0 0;
   background-repeat: no-repeat;
-  border: 0;
   cursor: pointer;
+
+  border: none;
+
+
 }
 
 
 
+ .modal-map {
+  display: none;
+  z-index: 10;
 
-/* Модальная карта */
-/* .modal-map {
   width: 943px;
   height: 449px;
-
+  border-top: 7px solid var(--basic-red);
   box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.15);
+
+
 }
 
-.modal-map img {
-  display: none;
-} */
 
-/* Модальная форма  */
+.modal-form {
+  /* display: none; */
+}
