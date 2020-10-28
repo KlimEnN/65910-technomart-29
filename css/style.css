@@ -1888,7 +1888,7 @@ fieldset {
 
 .nav-pages-list {
   display: flex;
-  margin-left: 250px;
+  margin-left: 240px;
 }
 
 .nav-pages-item {
@@ -1924,8 +1924,6 @@ fieldset {
 .nav-pages-item a {
   display: block;
   padding: 10px 15px;
-
-  color: var(--basic-black);
 }
 
 
