@@ -592,9 +592,28 @@
 
         <section class="modal modal-form">
           <h2 class="visually-hidden">Форма обратной связи</h2>
-         
+          <form class="form" method="get" action="https://echo.htmlacademy.ru">
+            <ul class="forma-list">
+              <li class="form-item">
+                <label for="name">Ваше имя:</label>
+                <input class="form-input" id="name" type="text" placeholder="Имя Фамилия">
+              </li>
+              <li class="form-item">
+                <label for="email">Ваш e-mail:</label>
+                <input class="form-input" id="email" type="text" placeholder="email@example.com">
+              </li>
+              <li class="form-item">
+                <label for="textarea">Текст письма:</label>
+                <textarea class="form-input form-textarea" name="" id="textarea" cols="20" rows="10" placeholder="В свободной форме"></textarea>
+              </li>
+            </ul>
+          </form>
+
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
-      </section>
+          <div class="footer-pop-up">
+            <button class="button button-link modal-form-btn" type="submit">Отправить</button>
+          </div>
+        </section>
 
 
 
