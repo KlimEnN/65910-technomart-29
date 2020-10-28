@@ -1938,6 +1938,7 @@ fieldset {
   left: 0;
   z-index: 10;
 
+
   margin: auto;
 }
 
@@ -1961,8 +1962,7 @@ fieldset {
 /* Модалка с формой */
 
 .modal-form {
-  z-index: 10;
-
+  display: none;
   width: 620px;
   height: 430px;
   padding-top: 40px;
@@ -2085,4 +2085,57 @@ fieldset {
   height: 449px;
 
   border-top: 7px solid var(--basic-red);
+}
+
+
+/* Модальное оконо с заказом */
+
+.modal-order{
+  display: none;
+  width: 620px;
+  height: 285px;
+  padding-top: 40px;
+
+  background-color: var(--basic-white);
+  border-top: 7px solid var(--basic-red);
+}
+
+.order-btn {
+ padding: 10px 46px;
+ margin-right: 10px;
+}
+
+.order-esc-btn {
+  padding: 10px 32px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.modal-order-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.order-text {
+  position: relative;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  width: 420px;
+  text-align: center;
+}
+
+
+.order-text::before {
+ position: absolute;
+ content: "";
+ width: 66px;
+ height: 66px;
+ left: -20px;
+ bottom: -20px;
+ background-image: url(../img/icon-mark.svg);
+
 }
