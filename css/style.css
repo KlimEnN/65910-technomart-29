@@ -569,6 +569,24 @@ img {
   grid-template-rows: 123px 123px 123px;
 }
 
+.slider-item.active {
+  z-index: 1;
+
+  opacity: 1;
+}
+
+.slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+
+  transition: 0.5s ease ;
+}
 
 .promo-slider {
   position: relative;
@@ -576,6 +594,7 @@ img {
   grid-column: 1/3;
   grid-row: 2/3;
 }
+
 
 .baner-title {
   position: absolute;
@@ -599,6 +618,7 @@ img {
 .slider-btn {
   position: absolute;
   top: 114px;
+  z-index: 2;
 }
 
 .slider-btn-l {
@@ -629,7 +649,56 @@ img {
   opacity: 0.3;
 }
 
+.owl-list {
+  position: relative;
+  top: 220px;
 
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+.owl {
+  margin-right: 20px;
+}
+
+.owl-1::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: var(--basic-white);
+  border-radius: 50%;
+}
+
+.owl-2::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: var(--basic-white);
+  border-radius: 50%;
+}
+
+
+.owl-active::after {
+  position: absolute;
+  content: "";
+  z-index: 50;
+
+  width: 6px;
+  height: 6px;
+ top: 2px;
+ left: 312px;
+  background-color: var(--basic-red);
+  border-radius: 50%;
+}
 
 
 .baner-title h2 {
