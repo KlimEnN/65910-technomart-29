@@ -1,4 +1,4 @@
-/* Variables */
+
 
 :root {
   --basic-background: #f4f7f9;
@@ -11,7 +11,6 @@
   --basic-red: red;
   --basic-sel: #f7f3ec;
   --basic-white: #ffffff;
-  /* Шрифты */
   --font-primary: "Cuprum", Arial, sans-serif;
   --font-secodary: "PT Sans",  Arial, sans-serif;
   --special-blue: #3bbce3;
@@ -25,8 +24,6 @@
 }
 
 
-
-/* Global */
 
 * {
   box-sizing: border-box;
@@ -60,6 +57,7 @@
   background: none;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .button-link:hover {
@@ -128,10 +126,6 @@ img {
   padding: 0 10px;
 }
 
-
-
-
-/* header */
 
 .main-header {
   min-height: 320px;
@@ -278,7 +272,6 @@ img {
   opacity: 50%;
 }
 
-/* Поиск по сайту */
 
 .search-form {
   position: relative;
@@ -564,7 +557,6 @@ img {
   opacity: 0.5;
 }
 
-/* Promo */
 
 .promo-list {
   display: grid;
@@ -779,8 +771,6 @@ img {
 }
 
 
-/* Топ товаров */
-
 .top-product {
   margin-bottom: 79px;
 }
@@ -952,7 +942,7 @@ img {
   text-align: center;
 }
 
-/* Продукт при наведении */
+
 .button-wrapper {
   position: absolute;
   top: 0;
@@ -1010,9 +1000,11 @@ img {
 
 
 .bookmark-btn {
+  display: block;
   width: 100%;
   padding: 7px ;
 
+  text-align: center;
   text-transform: uppercase;
 
   border: 3px solid #63a63e;
@@ -1026,8 +1018,6 @@ img {
   opacity: 50%;
 }
 
-
-/* Топ производители */
 
 .top-manufacturers {
   margin-bottom: 70px;
@@ -1063,10 +1053,8 @@ img {
   opacity: 0.5;
 }
 
-/* Сервисы */
 .servises {
   max-width: 100%;
-  max-height: 522px;
   margin-bottom: 70px;
   padding: 64px 0 99px 0;
 
@@ -1102,18 +1090,6 @@ img {
   flex-direction: column;
 }
 
-/* .servises-button::before {
-  content: "";
-  position: absolute;
-  left: 240px;
-
-  width: 10px;
-  height: 279px;
-
-  background-image: url("../img/line.svg");
-  background-repeat: no-repeat;
-  background-size: cover ;
-} */
 
 .servises-btn {
   display: flex;
@@ -1162,7 +1138,6 @@ img {
   right: 0;
 }
 
-/* О компании*/
 
 .about-company {
   margin-bottom: 70px;
@@ -1279,7 +1254,6 @@ img {
   padding: 11px 60px 9px 62px;
 }
 
-/* Подвал сайта */
 
 .logo-footer {
   display: flex;
@@ -1465,18 +1439,14 @@ img {
   margin-left: 50px;
 }
 
-.footer-wriper {
+.footer-wraper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 107px;
 }
 
-/* ########## страница каталоаг*/
 
-
-
-/* Хлебные крошки */
 .breadcrumb {
   display: flex;
   margin-bottom: 20px;
@@ -1512,8 +1482,6 @@ img {
 }
 
 
-/* Заголовок каталога */
-
 .catalog-title {
   margin-bottom: 20px;
   padding: 30px ;
@@ -1530,7 +1498,7 @@ img {
   color: #32425c;
 }
 
-/* Сортировка */
+
 
 .catalog-wriper-sorting {
   display: grid;
@@ -1579,10 +1547,6 @@ img {
   padding-right: 14px;
 }
 
-/* .sorting-block{
- display: flex;
- justify-content: space-between;
-} */
 
 .filter-heading {
   padding-left: 20px;
@@ -1647,7 +1611,6 @@ img {
   transform: rotate(180deg);
 }
 
-/* Каталог */
 
 .catalog {
   display: grid;
@@ -1665,7 +1628,6 @@ img {
   grid-template-columns: 220px 220px 220px;
 }
 
-/* Фильтр */
 .ange-filter {
   position: relative;
 }
@@ -1860,8 +1822,6 @@ fieldset {
 }
 
 
-/* SEO text */
-
 .seo-text {
   width: 100%;
   padding-top: 67px;
@@ -1880,7 +1840,6 @@ fieldset {
 }
 
 
-/* `page navigation */
 
 .nav-pages {
   display: flex;
@@ -1928,7 +1887,6 @@ fieldset {
 }
 
 
-/* Модальные окна */
 
 .modal {
   position: fixed;
@@ -1937,7 +1895,6 @@ fieldset {
   bottom: 0;
   left: 0;
   z-index: 10;
-
 
   margin: auto;
 }
@@ -1951,7 +1908,7 @@ fieldset {
   width: 22px;
   height: 22px;
 
-  background-color: var(--basic-white);
+  background-color: rgba(0, 0, 0, 1);
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1959,7 +1916,6 @@ fieldset {
   cursor: pointer;
 }
 
-/* Модалка с формой */
 
 .modal-form {
   display: none;
@@ -2074,9 +2030,6 @@ fieldset {
 }
 
 
-
-/* Модалка с картой */
-
 .modal-map {
   z-index: 10;
 
@@ -2088,9 +2041,7 @@ fieldset {
 }
 
 
-/* Модальное оконо с заказом */
-
-.modal-order{
+.modal-order {
   display: none;
   width: 620px;
   height: 285px;
@@ -2101,14 +2052,16 @@ fieldset {
 }
 
 .order-btn {
- padding: 10px 46px;
- margin-right: 10px;
+  margin-right: 10px;
+  padding: 10px 46px;
 }
 
 .order-esc-btn {
   padding: 10px 32px;
-  background-color: var(--basic-white);
+
   color: var(--basic-black);
+
+  background-color: var(--basic-white);
 }
 
 .modal-order-text {
@@ -2119,23 +2072,26 @@ fieldset {
 
 .order-text {
   position: relative;
-  font-family: var(--font-primary);
-  font-style: normal;
+
+  width: 420px;
+
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  width: 420px;
+  font-family: var(--font-primary);
   text-align: center;
+  font-style: normal;
 }
 
 
 .order-text::before {
- position: absolute;
- content: "";
- width: 66px;
- height: 66px;
- left: -20px;
- bottom: -20px;
- background-image: url(../img/icon-mark.svg);
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
 
+  width: 66px;
+  height: 66px;
+
+  background-image: url(../img/icon-mark.svg);
 }
