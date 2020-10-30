@@ -1158,6 +1158,15 @@ img {
   background-color: var(--basic-background);
 }
 
+.credit {
+  display: none;
+}
+
+.guarantee {
+  display: none;
+}
+
+
 .servises-heder {
   position: relative;
 
@@ -1201,6 +1210,11 @@ img {
 
   background-color: #32425c;
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+}
+
+.credit-btn {
+  display: flex;
+  padding: 10px 44px;
 }
 
 .active-btn {
@@ -1916,6 +1930,13 @@ fieldset {
   font-family: var(--font-secodary);
   text-transform: uppercase;
   font-style: normal;
+}
+
+.filter-input-checkbox:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px #fff,
+    0 0 0 6px #2f7cc0;
 }
 
 
