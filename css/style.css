@@ -1171,6 +1171,10 @@ img {
   background-color: var(--basic-background);
 }
 
+.delivery {
+  position: relative;
+}
+
 .credit {
   display: none;
 }
@@ -1204,6 +1208,7 @@ img {
 
   display: flex;
 }
+
 .servises-button {
   display: flex;
   flex-direction: column;
@@ -1258,8 +1263,8 @@ img {
 
 .servises-footer img {
   position: absolute;
-  top: 4;
-  right: 0;
+  right: 1px;
+  bottom: -96px;
 }
 
 
