@@ -91,14 +91,14 @@
           </ul>
           <ul class="check-out check-out-log ">
 
-            <li class="check-out-item">
+            <li class="check-out-item check-out-innner">
 
               <a href="#" class="check-out-link check-out-link-inner sing-in accaunt-btn ">
                 <svg aria-hidden="true" class="head">
                   <use xlink:href="#head"></use>
                 </svg>
                 Равшан Джамшутович
-                <svg aria-hidden="true" class="icon-login">
+                <svg aria-hidden="true" aria-label="Кнопка выхода из акккаунта" class="icon-out">
                   <use xlink:href="#icon-out"></use>
                 </svg>
               </a>
@@ -186,8 +186,8 @@
               <div class="sorting-item">По типу</div>
               <div class="sorting-item">По функционалу</div>
               <div class="sorting-btn">
-                <button class="button sorting-btn-down"></button>
-                <button class="button sorting-btn-up"></button>
+                <button aria-label="Кнопка сортировки от меньшей цены к большей" class="button sorting-btn-down"></button>
+                <button aria-label="Кнопка сортировки от большей цены к меньшей" class="button sorting-btn-up"></button>
               </div>
 
 
@@ -856,10 +856,10 @@
         d="M2 .494a1.986 1.986 0 110 3.973A1.986 1.986 0 012 .494z"
         fill="#32425C"></path>
       </symbol>
-      <symbol fill="none" xmlns="http://www.w3.org/2000/svg"
+      <symbol xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 18" id="head">
         <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"
-        fill="#C5C5C5"></path>
+        ></path>
       </symbol>
       <symbol fill="none" xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 11 10" id="sort-btn-l">
@@ -869,9 +869,9 @@
       viewBox="0 0 11 10" id="sort-btn-r">
         <path d="M5.5 10L0 0h11" fill="#C5C5C5"></path>
       </symbol>
-      <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17" id="icon-out">
-        <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"></path>
-        <path d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z" fill="#C5C5C5"></path>
+      <symbol viewBox="0 0 20 18"  xmlns="http://www.w3.org/2000/svg" id="icon-out">
+          <path d="M20 9L11.125.5v6h-6v5h6v6L20 9z"></path>
+          <path d="M2.106 14.452V3.548c.018-.376.171-1.057 1.01-1.057h5.027V.5H3.116C.938.5.112 2.31.087 3.527v10.946C.112 15.689.938 17.5 3.116 17.5h5.027v-1.99H3.116c-.839 0-.992-.683-1.01-1.058z"></path>
       </symbol>
     </svg>
 
