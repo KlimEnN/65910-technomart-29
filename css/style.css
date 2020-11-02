@@ -309,7 +309,7 @@ img {
 }
 
 .search-form:hover svg {
-  fill: var(--basic-red);
+  fill: var(--basic-white);
 }
 
 .search:hover {
@@ -345,6 +345,8 @@ img {
 .search-input:focus {
   background-color: var(--basic-white);
 }
+
+
 
 .search-input:active {
   background-color: var(--basic-white);
@@ -1792,6 +1794,12 @@ img {
   mix-blend-mode: normal;
 }
 
+.sorting-item:hover {
+  color: var(--basic-black);
+  opacity: 1;
+  border-bottom: 1px solid var(--basic-red);
+}
+
 .sorting-item-active {
   color: var(--basic-red);
 
@@ -1830,6 +1838,17 @@ img {
   border-color: var(--basic-red) transparent transparent transparent;
   transform: rotate(180deg);
 }
+
+.sorting-btn-down:hover,
+.sorting-btn-up:hover {
+  border-color: var(--basic-black) transparent transparent transparent;
+}
+
+.sorting-btn-down:active,
+.sorting-btn-up:active {
+  border-color: var(--basic-red) transparent transparent transparent;
+}
+
 
 
 .catalog {
@@ -2055,6 +2074,10 @@ fieldset {
   border: 1px solid var(--special-input);
 }
 
+.filter-option:hover {
+  fill: #000000;
+}
+
 .filter-option {
   display: flex;
   margin-bottom: 22px;
@@ -2083,11 +2106,38 @@ fieldset {
   left: -32px;
 }
 
+
+.filter-input-checkbox:hover + label::before {
+  content: url("../img/checkbox-off-hover.svg");
+  position: absolute;
+  top: -3px;
+  left: -32px;
+}
+
+
+
 .filter-input-checkbox:checked + label::before {
   content: url("../img/checkbox-on.svg");
   position: absolute;
   top: -3px;
   left: -32px;
+}
+
+
+.filter-input-checkbox:checked:hover + label::before {
+  content: url("../img/checkbox-on-hover1.svg");
+  position: absolute;
+  top: -3px;
+  left: -32px;
+}
+
+
+.filter-input-checkbox:disabled + label::before {
+  content: url("../img/checkbox-off.svg");
+  position: absolute;
+  top: -3px;
+  left: -32px;
+  opacity: 0.3;
 }
 
 .filter-input-radio + label::before {
@@ -2105,6 +2155,22 @@ fieldset {
   position: absolute;
   top: -4px;
   left: -32px;
+}
+
+.filter-input-radio:checked:hover + label::before {
+  content: url("../img/radio-on-hover.svg");
+  position: absolute;
+  top: -4px;
+  left: -32px;
+}
+
+
+.filter-input-radio:disabled + label::before {
+  content: url("../img/radio-off.svg");
+  position: absolute;
+  top: -4px;
+  left: -32px;
+  opacity: .3;
 }
 
 .filter-item-style {
