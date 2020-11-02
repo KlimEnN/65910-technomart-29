@@ -8,7 +8,7 @@
   --basic-grey: #32425c;
   --basic-greylight: #c5c5c5;
   --basic-oldprice: #a9a9a9;
-  --basic-red: red;
+  --basic-red: #ee3643;
   --basic-sel: #f7f3ec;
   --basic-white: #ffffff;
   --font-primary: "Cuprum", Arial, sans-serif;
@@ -21,6 +21,15 @@
   --special-warning: #ffbf47;
   --special-yellowlight: #ffd180;
   --special-ylellow: #ffbf47;
+  --special-button: #ca2c37;
+  --special-link: #293449;
+  --special-input: #e5e5e5;
+  --special-toggl: #ababab;
+  --special-dark: #212a3a;
+  --special-shadow: #405069;
+  --special-buy: #518534;
+  --special-btn: #367315;
+
 }
 
 
@@ -61,7 +70,7 @@
 }
 
 .button-link:hover {
-  background-color: #ca2c37;
+  background-color: var(--special-button);
 }
 
 .button-link:active {
@@ -144,8 +153,8 @@ img {
   width: 220px;
   height: 43px;
 
-  background: #ee3643;
-  box-shadow: 0 5px 0 0 #bb3a43;
+  background: var(--basic-red);
+  box-shadow: 0 5px 0 0 var(--special-error);
 
   user-select: none;
 }
@@ -214,7 +223,7 @@ img {
 
 .bookmark:active,
 .card:active {
-  background-color: #161d29;
+
   opacity: 50%;
 
   user-select: none;
@@ -281,7 +290,7 @@ img {
 
 
 .button-order:hover {
-  background-color: #5fbb2d;
+  background-color: var(--special-success);
 }
 
 .button-order:active {
@@ -492,7 +501,7 @@ img {
 }
 
 .log-in:hover svg {
-  fill: #3d546f;
+  fill: var(--basic-grey);
 }
 
 .log-in-item {
@@ -514,7 +523,7 @@ img {
 .check-out-link:active svg {
   color: var(--basic-greylight);
 
-  fill: #c5c5c5;
+  fill: var(--basic-greylight);
 }
 
 .icon-login {
@@ -522,7 +531,7 @@ img {
   height: 17px;
   margin-right: 6px;
 
-  fill: #c5c5c5;
+  fill:var(--basic-greylight);
 }
 
 .icon-login:hover {
@@ -534,7 +543,7 @@ img {
   width: 20px;
   height: 18px;
 
-  fill: #c5c5c5;
+  fill: var(--basic-greylight);
 }
 
 .head:hover {
@@ -545,7 +554,7 @@ img {
   width: 20px;
   height: 17px;
 
-  fill: #c5c5c5;
+  fill: var(--basic-greylight);
 }
 
 
@@ -559,7 +568,7 @@ img {
 }
 
 .icon-login:active {
-  fill: #c5c5c5;
+  fill: var(--basic-greylight);
 }
 
 
@@ -600,12 +609,12 @@ img {
 }
 
 .main-nav-link:hover {
-  background-color: #293449;
+  background-color: var(--special-link);
 }
 
 .main-nav-link:active {
-  background-color: #293449;
-  box-shadow: inset 0 -5px 0 #293449;
+  background-color: var(--special-link);
+  box-shadow: inset 0 -5px 0 var(--special-link);
   opacity: 0.5;
 }
 
@@ -760,8 +769,8 @@ img {
   height: 10px;
   margin: 0 5px;
 
-  background: #ffffff;
-  border: 1px solid #000000;
+  background: var(--basic-white);
+  border: 1px solid var(--basic-black);
   border-radius: 50%;
 }
 
@@ -982,7 +991,7 @@ img {
   height: 318px;
   padding-bottom: 21px;
 
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--special-input);
 }
 
 
@@ -1115,7 +1124,7 @@ img {
   height: 100%;
   padding: 36px 42px;
 
-  background: #ffffff;
+  background: var(--basic-white);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -1142,8 +1151,8 @@ img {
 
   color: var(--basic-white);
 
-  background: #63a63e;
-  box-shadow: inset 0 -3px 0 #367315;
+  background: var(--basic-green);
+  box-shadow: inset 0 -3px 0 var(--special-btn);
 }
 
 
@@ -1153,7 +1162,7 @@ img {
 }
 
 .buy-btn:active {
-  background-color: #518534;
+  background-color: var(--special-buy);
 }
 
 
@@ -1166,11 +1175,11 @@ img {
   text-align: center;
   text-transform: uppercase;
 
-  border: 3px solid #63a63e;
+  border: 3px solid var(--basic-green);
 }
 
 .bookmark-btn:hover {
-  border: 3px solid #32425c;
+  border: 3px solid var(--basic-grey);
 }
 
 .bookmark-btn:active {
@@ -1196,7 +1205,7 @@ img {
 }
 
 .top-manufacturers-item {
-  outline: 1px solid #eaeaea;
+  outline: 1px solid var(--basic-sel);
 
   transition: 10ms;
 }
@@ -1275,8 +1284,8 @@ img {
   color: var(--basic-white);
   font-style: normal;
 
-  background-color: #32425c;
-  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+  background-color: var(--basic-grey);
+  box-shadow: 0 1px 0 var(--special-link), inset 0 1px 0 var(--special-shadow);
 }
 
 .credit-btn-s {
@@ -1285,13 +1294,13 @@ img {
 }
 
 .active-btn {
-  color: #32425c;
+  color: var(--basic-grey);
 
   background: var(--basic-white);
 }
 
 .servises-btn:hover {
-  background: #293449;
+  background: var(--special-link);
 }
 
 
@@ -1358,7 +1367,7 @@ img {
   width: 25px;
   height: 2px;
 
-  border-top: 2px solid #f50057;
+  border-top: 2px solid var(--basic-red);
 }
 
 
@@ -1439,14 +1448,14 @@ img {
   width: 220px ;
   height: 68px;
 
-  background: #ee3643;
-  box-shadow: 0 5px 0 0 #bb3a43;
+  background: var(--basic-red);
+  box-shadow: 0 5px 0 0 var(--basic-red);
 
   user-select: none;
 }
 
 .main-footer {
-  background-color: #32425c;
+  background-color: var(--basic-grey);
 }
 
 .footer-left-side {
@@ -1518,7 +1527,7 @@ img {
 .catalog-footer-link {
   font-size: 18px;
   line-height: 24px;
-  color: #ffda96;
+  color: var(--special-yellowlight);
 }
 
 .catalog-footer-link:hover {
@@ -1562,7 +1571,7 @@ img {
 }
 
 .copyright {
-  background-color: #293449;
+  background-color: var(--special-link);
 }
 
 .social-list {
@@ -1586,7 +1595,7 @@ img {
   width: 42px;
   height: 42px;
 
-  background-color: #212a3a;
+  background-color: var(--special-dark);
   border-radius: 50%;
 }
 
@@ -1618,7 +1627,7 @@ img {
 .feedback a {
   font-size: 16px;
   line-height: 18px;
-  color: #ffd180;
+  color: var(--special-yellowlight);
 }
 
 .feedback a:hover {
@@ -1705,7 +1714,7 @@ img {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  color: #32425c;
+  color: var(--basic-grey);
 }
 
 
@@ -1863,14 +1872,14 @@ img {
   width: 180px;
   height: 2px;
 
-  background: #d7dcde;
+  background: var(--basic-sel);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
 
-  background: #00ca74;
+  background: var(--special-success);
 }
 
 
@@ -1894,10 +1903,10 @@ img {
   height: 4px;
   padding: 0;
 
-  background-color: #ababab;
-  border: 8px solid #ffffff;
+  background-color: var(--special-toggl);
+  border: 8px solid var(--basic-white);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--basic-greylight);
   cursor: pointer;
 }
 
@@ -1910,7 +1919,7 @@ img {
   width: 4px;
   height: 4px;
 
-  background-color: #ababab;
+  background-color: var(--special-toggl);
   border-radius: 50%;
 }
 
@@ -2043,7 +2052,7 @@ fieldset {
   font-family: var(--font-secodary);
   text-transform: uppercase;
 
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--special-input);
 }
 
 .filter-option {
@@ -2106,12 +2115,6 @@ fieldset {
   font-style: normal;
 }
 
-.filter-input-checkbox:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px #ffffff,
-  0 0 0 6px #2f7cc0;
-}
-
 
 .seo-text {
   width: 100%;
@@ -2151,7 +2154,7 @@ fieldset {
   font-family: var(--font-secodary);
   font-style: normal;
 
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--special-input);
   border-radius: 2px;
 
   user-select: none;
@@ -2160,9 +2163,9 @@ fieldset {
 .nav-pages-item-current {
   color: var(--basic-white);
 
-  background: #ee3643;
+  background: var(--basic-red);
   background-color: var(--basic-red);
-  border: 1px solid #ee3643;
+  border: 1px solid var(--basic-red);
   border-radius: 2px;
 }
 
@@ -2171,11 +2174,11 @@ fieldset {
 }
 
 .nav-pages-item:hover {
-  border: 1px solid #c5c5c5;
+  border: 1px solid var(--basic-greylight);
 }
 
 .nav-pages-item:active {
-  border: 1px solid #ee3643;
+  border: 1px solid var(--basic-red);
 }
 
 .nav-pages-item a {
@@ -2243,7 +2246,7 @@ fieldset {
   height: 38px;
   margin-bottom: 13px;
 
-  border: 2px solid #c5c5c5;
+  border: 2px solid var(--special-input);
   border-radius: 2px;
 }
 
@@ -2251,7 +2254,7 @@ fieldset {
   width: 460px;
   height: 114px;
 
-  border: 2px solid #c5c5c5;
+  border: 2px solid var(--basic-greylight);
   border-radius: 2px;
 }
 
@@ -2296,7 +2299,7 @@ fieldset {
   font-size: 13px;
   line-height: 24px;
   font-family: var(--font-secodary);
-  color: #a9a9a9;
+  color: var(--basic-oldprice);
 }
 
 .form-input:-moz-placeholder {
@@ -2305,7 +2308,7 @@ fieldset {
   font-size: 13px;
   line-height: 24px;
   font-family: var(--font-secodary);
-  color: #a9a9a9;
+  color: var(--basic-oldprice);
 }
 
 .form-input::-moz-placeholder {
@@ -2314,7 +2317,7 @@ fieldset {
   font-size: 13px;
   line-height: 24px;
   font-family: var(--font-secodary);
-  color: #a9a9a9;
+  color: var(--basic-oldprice);
 }
 
 .form-input:-ms-input-placeholder {
@@ -2323,7 +2326,7 @@ fieldset {
   font-size: 13px;
   line-height: 24px;
   font-family: var(--font-secodary);
-  color: #a9a9a9;
+  color: var(--basic-oldprice);
 }
 
 
