@@ -14,22 +14,21 @@
   --font-primary: "Cuprum", Arial, sans-serif;
   --font-secodary: "PT Sans",  Arial, sans-serif;
   --special-blue: #3bbce3;
+  --special-btn: #367315;
+  --special-button: #ca2c37;
+  --special-buy: #518534;
+  --special-dark: #212a3a;
   --special-error: #ba2732;
   --special-greenlight: #8ed78f;
+  --special-input: #e5e5e5;
   --special-lilac: #dc91d8;
+  --special-link: #293449;
+  --special-shadow: #405069;
   --special-success: #5fbb2d;
+  --special-toggl: #ababab;
   --special-warning: #ffbf47;
   --special-yellowlight: #ffd180;
   --special-ylellow: #ffbf47;
-  --special-button: #ca2c37;
-  --special-link: #293449;
-  --special-input: #e5e5e5;
-  --special-toggl: #ababab;
-  --special-dark: #212a3a;
-  --special-shadow: #405069;
-  --special-buy: #518534;
-  --special-btn: #367315;
-
 }
 
 
@@ -223,7 +222,6 @@ img {
 
 .bookmark:active,
 .card:active {
-
   opacity: 50%;
 
   user-select: none;
@@ -533,7 +531,7 @@ img {
   height: 17px;
   margin-right: 6px;
 
-  fill:var(--basic-greylight);
+  fill: var(--basic-greylight);
 }
 
 .icon-login:hover {
@@ -1488,7 +1486,10 @@ img {
 }
 
 
-
+.my-order,
+.my-account {
+  color: var(--basic-black);
+}
 
 .nav-static-pages-item {
   margin-top: 3px;
@@ -1787,6 +1788,7 @@ img {
   font-family: var(--font-secodary);
   text-transform: uppercase;
 
+  background-color: var(--basic-sel);
   border-bottom: 1px dotted var(--basic-red);
   cursor: pointer;
   opacity: 0.3;
@@ -1796,8 +1798,9 @@ img {
 
 .sorting-item:hover {
   color: var(--basic-black);
-  opacity: 1;
+
   border-bottom: 1px solid var(--basic-red);
+  opacity: 1;
 }
 
 .sorting-item-active {
@@ -1813,6 +1816,7 @@ img {
   border: 0;
   opacity: 1;
 }
+
 
 .sorting-btn {
   display: flex;
@@ -2137,6 +2141,7 @@ fieldset {
   position: absolute;
   top: -3px;
   left: -32px;
+
   opacity: 0.3;
 }
 
@@ -2170,7 +2175,8 @@ fieldset {
   position: absolute;
   top: -4px;
   left: -32px;
-  opacity: .3;
+
+  opacity: 0.3;
 }
 
 .filter-item-style {
