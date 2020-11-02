@@ -210,10 +210,13 @@
                   style="left: 70%" aria-label="Выбрать максимальное значение цены"></div>
                 </div>
                 <div class="price-controls">
-                  <input class="min-price input" type="number"
-                  name="min-price" value="0">
+                  <label aria-label="Ползунок для выбора минимального порога цены">
+                    <input class="min-price input" type="number" name="min-price" value="0">
+                  </label>
+                  <label aria-label="Ползунок для выбора максимального порога цены">
                   <input class="max-price input" type="number"
                   name="max-price" value="30000">
+                  </label>
                 </div>
               </div>
             </fieldset>
