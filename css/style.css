@@ -423,7 +423,7 @@ img {
 
   color: var(--basic-red);
 
-  border: 3px solid white;
+  border: 3px solid var(--basic-white);
 }
 
 
@@ -435,7 +435,7 @@ img {
   width: 19px;
   height: 19px;
 
-  fill: darkgrey;
+  fill: var(--basic-oldprice);
 }
 
 .phone {
@@ -574,9 +574,6 @@ img {
 }
 
 
-.icon-out:active {
-  fill: brown;
-}
 
 .icon-login:active {
   fill: var(--basic-greylight);
@@ -1653,7 +1650,7 @@ img {
 }
 
 .feedback a:active {
-  color: red;
+  color: var(--basic-red);
 }
 
 
@@ -2094,7 +2091,7 @@ fieldset {
 }
 
 .filter-option:hover {
-  fill: #000000;
+  fill: var(--basic-black);
 }
 
 .filter-option {
