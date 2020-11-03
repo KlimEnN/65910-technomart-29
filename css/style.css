@@ -689,7 +689,7 @@ img {
   width: 620px;
   height: 266px;
 
-  background-image: url("../img/slider2.jpg");
+  background-color: var(--basic-grey);
   background-image: url("../img/foto-slider.jpg");
   background-repeat: no-repeat;
   background-size: cover;
