@@ -1357,6 +1357,10 @@ img {
   margin-left: 37px;
 }
 
+.about-company_list li {
+  color: var(--basic-black);
+}
+
 
 .about-company-item::before {
   content: "";
