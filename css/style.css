@@ -2244,6 +2244,15 @@ fieldset {
   user-select: none;
 }
 
+
+.nav-pages-item a{
+ color: var(--basic-black);
+}
+
+.nav-pages-item:first-child a{
+  color: var(--basic-white);
+ }
+
 .nav-pages-item-current {
   color: var(--basic-white);
 
@@ -2424,6 +2433,9 @@ fieldset {
   border-top: 7px solid var(--basic-red);
 }
 
+.map-bg {
+  background-color: var(--basic-sel);
+}
 
 .modal-order {
   display: none;
