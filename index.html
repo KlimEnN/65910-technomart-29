@@ -529,12 +529,11 @@
                 Вы можете забрать товар сами,
                 <br> заехав в наш офис:
               </p>
-              <a href="https://www.google.com.ua/maps/@50.4281759,30.3742297,14z"
-              target="_blank">
+              <a class="show-popup">
                 <img src="img/map-aboiut.jpg" alt="Карта проезда"
                 width="300" height="158">
               </a>
-              <a href="writeus.html" class="button-show-popup button button-link">Заблудились? Напишите нам!</a>
+              <a class="button-show-popup button button-link">Заблудились? Напишите нам!</a>
             </div>
           </div>
         </div>
@@ -702,6 +701,22 @@
       </div>
     </section>
 
+    <section class="modal modal-order">
+      <h2 class="visually-hidden">Модальное окно с подтверждением заказа</h2>
+      <div class="modal-order-text">
+        <p class="order-text">Товар добавлен в корзину!</p>
+      </div>
+      <button aria-label="Кнопка закрытия модального окна подтверждения заказа"
+      class="modal-close" type="button"></button>
+      <div class="footer-pop-up">
+        <button class="button button-link order-btn"
+        type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+        <button class="button order-esc-btn"
+          type="submit">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+      </div>
+    </section>
+
+
     <svg width="0" height="0" class="hidden visually-hidden">
       <symbol viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"
       id="icon-bookmark">
@@ -794,7 +809,7 @@
       </symbol>
     </svg>
 
-    <script src="js/javascript.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 
 </html>

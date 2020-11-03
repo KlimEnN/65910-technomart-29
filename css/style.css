@@ -318,12 +318,12 @@ img {
 .search-btn {
   position: absolute;
   top: 12px;
+  z-index: 2;
 
   padding-left: 12px;
 
   background: none;
   border: none;
-  z-index: 2;
 }
 
 
@@ -341,8 +341,9 @@ img {
 }
 
 
-.search-form input{
- padding-left: 50px;
+
+.search-form input {
+  padding-left: 50px;
 }
 
 
@@ -351,7 +352,7 @@ img {
   background-color: var(--basic-white);
 }
 
-.search-input:focus .icon-search{
+.search-input:focus + .icon-search {
   fill: var(--basic-red);
 }
 
@@ -363,7 +364,6 @@ img {
 
 
 .search-input::-webkit-input-placeholder {
-
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -2245,13 +2245,13 @@ fieldset {
 }
 
 
-.nav-pages-item a{
- color: var(--basic-black);
+.nav-pages-item a {
+  color: var(--basic-black);
 }
 
-.nav-pages-item:first-child a{
+.nav-pages-item:first-child a {
   color: var(--basic-white);
- }
+}
 
 .nav-pages-item-current {
   color: var(--basic-white);
@@ -2289,7 +2289,12 @@ fieldset {
   left: 0;
   z-index: 10;
 
+  display: none;
   margin: auto;
+}
+
+.modal-show {
+  display: block;
 }
 
 
@@ -2311,7 +2316,6 @@ fieldset {
 
 
 .modal-form {
-  display: none;
   width: 620px;
   height: 430px;
   padding-top: 40px;
@@ -2423,10 +2427,10 @@ fieldset {
 }
 
 
+
 .modal-map {
   z-index: 10;
 
-  display: none;
   width: 943px;
   height: 449px;
 
@@ -2438,7 +2442,6 @@ fieldset {
 }
 
 .modal-order {
-  display: none;
   width: 620px;
   height: 285px;
   padding-top: 40px;

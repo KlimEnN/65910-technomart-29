@@ -17,3 +17,49 @@ function sliderMove(evt) {
   slides[currentSlide].classList.add(activeClassName);
   dots[currentSlide].classList.add(activeClassName);
 };
+
+
+
+const mapLink = document.querySelector(".show-popup");
+const mapPopup = document.querySelector(".modal-map");
+const mapClose = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function () {
+  mapPopup.classList.add("modal-show");
+});
+
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
+});
+
+
+
+const formLink = document.querySelector(".button-show-popup");
+const formPopup = document.querySelector(".modal-form");
+const formClose = formPopup.querySelector(".modal-close");
+
+formLink.addEventListener("click", function () {
+  formPopup.classList.add("modal-show");
+});
+
+formClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  formPopup.classList.remove("modal-show");
+});
+
+
+
+const buyLink = document.querySelector(".buy-btn");
+const buyPopup = document.querySelector(".modal-order");
+const buyClose = buyPopup.querySelector(".modal-close");
+
+buyLink.addEventListener("click", function () {
+  buyPopup.classList.add("modal-show");
+});
+
+buyClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buyPopup.classList.remove("modal-show");
+});
