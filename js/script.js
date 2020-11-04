@@ -63,3 +63,5 @@ buyClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   buyPopup.classList.remove("modal-show");
 });
+
+

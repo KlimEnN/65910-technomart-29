@@ -403,6 +403,10 @@ img {
 }
 
 .adres-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px;
   margin-top: 2px;
 
   font-weight: normal;
@@ -553,8 +557,14 @@ img {
 .head {
   width: 20px;
   height: 18px;
-
+  margin-right: 9px;
   fill: var(--basic-greylight);
+}
+
+.account {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
 }
 
 .head:hover {
@@ -1045,6 +1055,7 @@ img {
 .product-name {
   margin-top: 0;
   margin-bottom: 2px;
+  max-width: 210px;
 
   font-weight: bold;
   font-size: 18px;
@@ -1566,14 +1577,18 @@ img {
 
 .nav-static-ages-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 700px;
 }
 
 
 
 .nav-catalog-footer-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 600px;
   margin-top: 7px;
 }
 
