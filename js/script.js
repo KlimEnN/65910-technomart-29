@@ -51,9 +51,10 @@ formClose.addEventListener("click", function (evt) {
 
 
 
-const buyLink = document.querySelectorAll(".button__buy");
+const buyLink = document.querySelectorAll(".buy-btn");
 const buyPopup = document.querySelector(".modal-order");
 const buyClose = buyPopup.querySelector(".modal-close");
+const buyCloseButton = buyPopup.querySelector(".order-esc-btn");
 
 for (var i = 0; i < buyLink.length; i++) {
   buyLink[i].addEventListener("click", function (evt) {
@@ -73,3 +74,11 @@ buyCloseButton.addEventListener("click", function (evt) {
   buyPopup.classList.remove("modal-show");
 });
 
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (buyPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      buyPopup.classList.remove("modal-show");
+    }
+  }
+});
