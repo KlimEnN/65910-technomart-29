@@ -51,17 +51,25 @@ formClose.addEventListener("click", function (evt) {
 
 
 
-const buyLink = document.querySelector(".buy-btn");
+const buyLink = document.querySelectorAll(".button__buy");
 const buyPopup = document.querySelector(".modal-order");
 const buyClose = buyPopup.querySelector(".modal-close");
 
-buyLink.addEventListener("click", function () {
-  buyPopup.classList.add("modal-show");
+for (var i = 0; i < buyLink.length; i++) {
+  buyLink[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    buyPopup.classList.add("modal-show");
+  });
+}
+
+  buyClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    buyPopup.classList.remove("modal-show");
 });
 
-buyClose.addEventListener("click", function (evt) {
+
+buyCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   buyPopup.classList.remove("modal-show");
 });
-
 

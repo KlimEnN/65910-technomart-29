@@ -335,6 +335,7 @@ img {
 .search-input {
   width: 271px;
   padding: 12px;
+  position: relative;
 
   background-color: var(--basic-grey);
   border: none;
@@ -343,7 +344,8 @@ img {
 
 
 .search-form input {
-  padding-left: 50px;
+
+  padding-left: 42px;
 }
 
 
@@ -355,6 +357,7 @@ img {
 .search-input:focus + .icon-search {
   fill: var(--basic-red);
 }
+
 
 
 
@@ -375,15 +378,21 @@ img {
 
 
 .icon-search {
+  position: absolute;
   width: 17px;
   height: 17px;
   margin-left: 7px;
+  top: 10px;
+  left: 10px;
 
   cursor: pointer;
 
   fill: var(--special-toggl);
 }
 
+input:focus + search-btn svg {
+  fill: var(--basic-red);
+}
 
 
 .midl-menu {
@@ -2309,7 +2318,20 @@ fieldset {
 }
 
 .modal-show {
+  opacity: 0;
   display: block;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+from {
+  opacity: 0;
+
+}
+
+to {
+  opacity: 1
+}
 }
 
 
