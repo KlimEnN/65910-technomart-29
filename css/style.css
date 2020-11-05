@@ -1296,8 +1296,19 @@ input:focus + search-btn svg {
 .servises-button {
   display: flex;
   flex-direction: column;
+
 }
 
+
+.servises-button::after {
+  content: "";
+  position: absolute;
+  top: -43px;
+  right: 700px;
+  width: 10px;
+  height: 279px;
+  background-image: url('../img/line.png');
+}
 
 .servises-btn {
   display: flex;
@@ -2220,6 +2231,7 @@ fieldset {
   text-transform: uppercase;
   font-style: normal;
 }
+
 
 
 .seo-text {
