@@ -74,11 +74,4 @@ buyCloseButton.addEventListener("click", function (evt) {
   buyPopup.classList.remove("modal-show");
 });
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (buyPopup.classList.contains("modal-show")) {
-      evt.preventDefault();
-      buyPopup.classList.remove("modal-show");
-    }
-  }
-});
+
